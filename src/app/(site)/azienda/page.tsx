@@ -1,8 +1,17 @@
+import { CTAWide } from '@/components/sections/CTAWide'
+import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
+import { AziendaSection2 } from '@/components/sections/azienda/AziendaSection2'
+
 export default function AziendaPage() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Azienda</h1>
-      <p>La nostra storia e la nostra missione.</p>
-    </div>
+    <>
+      <HeroPageTitle
+        title="Azienda"
+        subtitle="La nostra storia, la nostra passione per il comfort"
+        backgroundImage="/hero/herobg-Azienda.png"
+      />
+      <AziendaSection2 />
+      <CTAWide />
+    </>
   )
 }

@@ -1,90 +1,88 @@
-import Link from 'next/link'
+import Link from "next/link";
+import Image from "next/image";
+import { homeNews, NewsItem } from "@/data/homeNews";
+
+type NewsCardProps = {
+  title: string;
+  dateLabel: string;
+  href: string;
+  imageSrc: string;
+  imageAlt?: string;
+  className?: string;
+};
+
+export function NewsCard({
+  title,
+  dateLabel,
+  href,
+  imageSrc,
+  imageAlt,
+  className,
+}: NewsCardProps) {
+  return (
+    <Link
+      href={href}
+      className={[
+        "group block w-[302px] flex-shrink-0 bg-v-dark rounded-xl p-6 transition-colors",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      {/* Image */}
+      <div className="relative w-full h-[200px] overflow-hidden rounded-[16px]">
+        <Image
+          src={imageSrc}
+          alt={imageAlt ?? title}
+          fill
+          className="object-cover"
+          sizes="302px"
+        />
+      </div>
+
+      {/* Text */}
+      <div className="pt-4">
+        <div className="text-xs text-white/80">{dateLabel}</div>
+        <h3 className="mt-1 text-lg font-medium text-white group-hover:underline">
+          {title}
+        </h3>
+      </div>
+    </Link>
+  );
+}
 
 export function NewsStripSection() {
-  const newsItems = [
-    {
-      id: 1,
-      title: "Nuove tecnologie per il risparmio energetico",
-      excerpt: "Scopri le ultime innovazioni nel settore della climatizzazione",
-      date: "15 Gennaio 2024",
-      category: "Innovazione"
-    },
-    {
-      id: 2,
-      title: "Manutenzione primaverile: i consigli degli esperti",
-      excerpt: "Prepara i tuoi impianti per la stagione estiva",
-      date: "10 Gennaio 2024",
-      category: "Manutenzione"
-    },
-    {
-      id: 3,
-      title: "Bonus ristrutturazione 2024: come approfittarne",
-      excerpt: "Guida completa alle agevolazioni fiscali per impianti efficienti",
-      date: "5 Gennaio 2024",
-      category: "Bonus"
-    },
-    {
-      id: 4,
-      title: "Climatizzazione smart: controllo da remoto",
-      excerpt: "Gestisci i tuoi impianti ovunque ti trovi con l'app dedicata",
-      date: "28 Dicembre 2023",
-      category: "Tecnologia"
-    }
-  ]
-
+  const newsItems = homeNews;
   return (
-    <section className="relative py-20 bg-gray-900">
+    <section className="bg-v-dark py-16 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Section Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-0">
-            Ultime news
-          </h2>
-          <Link 
+        {/* Header */}
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="text-2xl md:text-3xl font-semibold text-white">Ultime news</h2>
+          <Link
             href="/news"
-            className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center justify-center rounded-full border border-white/40 px-5 py-2 text-sm font-medium text-white hover:bg-white hover:text-v-dark transition"
           >
             Vedi tutte
           </Link>
         </div>
-        
+
         {/* Horizontal Scroll Cards */}
         <div className="overflow-x-auto pb-4">
-          <div className="flex space-x-6" style={{ minWidth: 'max-content' }}>
-            {newsItems.map((item) => (
-              <div 
+          <div className="flex space-x-6" style={{ minWidth: "max-content" }}>
+            {newsItems.map((item: NewsItem) => (
+              <NewsCard
                 key={item.id}
-                className="w-80 bg-gray-800 rounded-xl p-6 flex-shrink-0 hover:bg-gray-750 transition-colors"
-              >
-                {/* Category Badge */}
-                <div className="mb-4">
-                  <span className="inline-block px-3 py-1 bg-blue-600/20 text-blue-400 text-sm font-medium rounded-full">
-                    {item.category}
-                  </span>
-                </div>
-                
-                {/* Title */}
-                <h3 className="text-xl font-semibold text-white mb-3 line-clamp-2">
-                  {item.title}
-                </h3>
-                
-                {/* Excerpt */}
-                <p className="text-gray-400 mb-4 line-clamp-3">
-                  {item.excerpt}
-                </p>
-                
-                {/* Date */}
-                <div className="flex items-center text-gray-500 text-sm">
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  {item.date}
-                </div>
-              </div>
+                title={item.title}
+                dateLabel={item.dateLabel}
+                href={item.href}
+                imageSrc={item.imageSrc}
+                imageAlt={item.imageAlt}
+              />
             ))}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
