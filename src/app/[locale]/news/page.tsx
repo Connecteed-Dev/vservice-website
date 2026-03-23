@@ -1,15 +1,7 @@
-import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
-import { NewsStripSection } from '@/components/sections/homePage/NewsStripSection'
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../(site)/news/page'
 
-export default function NewsPage() {
-  return (
-    <>
-      <HeroPageTitle
-        title="News"
-        subtitle="Le ultime novità dal settore"
-        backgroundImage="/news/news-hero-image.png"
-      />
-      <NewsStripSection />
-    </>
-  )
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale)
+  return <SitePage />
 }

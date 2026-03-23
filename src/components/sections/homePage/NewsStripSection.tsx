@@ -1,5 +1,10 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
+import { useReactiveLocale } from '@/hooks/useReactiveLocale'
+import { useTranslations } from 'next-intl'
+import { localeHref } from '@/lib/localeHref'
 import { NewsItem } from "@/data/homeNews";
 import { homeNews } from "@/data/homeNews";
 
@@ -51,17 +56,21 @@ type NewsStripSectionProps = {
 };
 
 export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
+  const locale = useReactiveLocale()
+  const t = useTranslations('homepage.newsStrip')
+  const tArticles = useTranslations('newsArticles')
+
   return (
     <section className="bg-v-dark py-16 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white">Ultime news</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-white">{t('title')}</h2>
           <Link
-            href="/news"
+            href={localeHref(locale, '/news')}
             className="inline-flex items-center justify-center rounded-full border border-white/40 px-5 py-2 text-sm font-medium text-white hover:bg-white hover:text-v-dark transition"
           >
-            Vedi tutte
+            {t('vediTutte')}
           </Link>
         </div>
 
@@ -70,11 +79,11 @@ export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
           {items.map((item: NewsItem) => (
             <NewsCard
               key={item.id}
-              title={item.title}
+              title={tArticles(`${item.id}.title`)}
               dateLabel={item.dateLabel}
-              href={item.href}
+              href={localeHref(locale, item.href)}
               imageSrc={item.imageSrc}
-              imageAlt={item.imageAlt}
+              imageAlt={tArticles(`${item.id}.title`)}
               className="bg-gray-800 rounded-xl p-6 flex-shrink-0 hover:bg-gray-750 transition-colors"
             />
           ))}

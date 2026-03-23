@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server'
 import Image from "next/image";
 import { ClippedBox, type ClipVariant } from "@/components/ui/ClippedBox";
 
@@ -9,21 +10,21 @@ type AziendaBlock = {
   layout: "textLeftImageRight" | "imageLeftTextRight";
 };
 
-export function AziendaSection2() {
+export async function AziendaSection2() {
+  const t = await getTranslations('azienda')
+
   const blocks: AziendaBlock[] = [
     {
-      title: "V.Service: leader in climatizzazione e riscaldamento",
-      body:
-        "V.Service si afferma come un'azienda di riferimento nel settore della climatizzazione e riscaldamento industriale, per industria, capannoni, ospedali, uffici, condomini, aziende e residenziale, specializzata nella progettazione, installazione, manutenzione e assistenza di impianti di condizionamento e riscaldamento. Riconosciuta per la sua expertise specifica in questo ambito, V.Service è un punto di riferimento negli impianti di condizionamento e riscaldamento nel Lazio e tutto il centro Italia. Con oltre 20 anni di esperienza, l'azienda gestisce con competenza e professionalità la manutenzione di impianti civili ed industriali, sia a espansione diretta (gas) che indiretta (acqua).",
-      imageSrc: "/azienda/aziendaRightimg.png", // <--  il path giusto
+      title: t('block1.title'),
+      body: t('block1.body'),
+      imageSrc: "/azienda/aziendaRightimg.png",
       imageAlt: "Impianti industriali",
       layout: "textLeftImageRight",
     },
     {
-      title: "Un centro assistenza autorizzato",
-      body:
-        "V.Service, un centro assistenza autorizzato per marchi di prestigio come Clivet, M.T.A, Tecnair, Robur Lennox, si distingue nel settore del condizionamento e riscaldamento. Offrendo non solo assistenza ma anche un servizio di vendita di ricambi per questi marchi, V.Service risponde efficacemente alle esigenze dei suoi clienti. La società, vantando certificazioni importanti come la ISO 9001-15 e specializzazioni nella movimentazione dei gas refrigeranti, si pone come leader nel suo settore.",
-      imageSrc: "/azienda/aziendaLeftimg.png", // <--  il path giusto
+      title: t('block2.title'),
+      body: t('block2.body'),
+      imageSrc: "/azienda/aziendaLeftimg.png",
       imageAlt: "Tecnico al lavoro su impianto",
       layout: "imageLeftTextRight",
     },
@@ -45,22 +46,17 @@ export function AziendaSection2() {
 function AziendaSplitBlock({ title, body, imageSrc, imageAlt, layout }: AziendaBlock) {
   const isImageLeft = layout === "imageLeftTextRight";
 
-  // IMPORTANT: clip depends on where the image is placed
-  // - image on RIGHT => cut LEFT (splitImageCutLeft) 
-  // - image on LEFT  => cut RIGHT (splitImageCutRight)
-const clipVariant: ClipVariant = isImageLeft
-  ? "aziendaCutRightStraight"   // image on LEFT => cut on RIGHT (straight)
-  : "aziendaCutLeftStraight";   // image on RIGHT => cut on LEFT (straight)
+  const clipVariant: ClipVariant = isImageLeft
+    ? "aziendaCutRightStraight"
+    : "aziendaCutLeftStraight";
+
   return (
     <div>
-      {/* Title above the card */}
       <h2 className="text-2xl md:text-3xl font-bold text-v-dark mb-6">
         {title}
       </h2>
 
-      {/* Card */}
       <div className="bg-white rounded-[20px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-        {/* LEFT COLUMN */}
         <div className={isImageLeft ? "order-1 lg:order-1" : "order-1 lg:order-1"}>
           {isImageLeft ? (
             <ImageSide imageSrc={imageSrc} imageAlt={imageAlt} clip={clipVariant} />
@@ -69,7 +65,6 @@ const clipVariant: ClipVariant = isImageLeft
           )}
         </div>
 
-        {/* RIGHT COLUMN */}
         <div className={isImageLeft ? "order-2 lg:order-2" : "order-2 lg:order-2"}>
           {isImageLeft ? (
             <TextSide body={body} />

@@ -3,14 +3,11 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
-
-type InfoItem = {
-  title: string
-  iconSrc: string
-  lines: string[]
-}
+import { useTranslations } from 'next-intl'
 
 export function ContactFormSection() {
+  const t = useTranslations('contatti.form')
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -62,32 +59,29 @@ export function ContactFormSection() {
     }
   }
 
-  // ORDER:
-  // Row 1: Sede (left) + Email (right)
-  // Row 2: Telefono (left) + Orari (right)
   const infoGrid: { left: InfoItem; right: InfoItem }[] = [
     {
       left: {
-        title: 'Sede',
+        title: t('sedeLabel'),
         iconSrc: '/icons/marker-pin-white.svg',
-        lines: ['Sede operativa via dei Quintili 55b, Roma', 'Sede legale via dei Juvencin n°28'],
+        lines: [t('sedeOperativa'), t('sedeLegale')],
       },
       right: {
-        title: 'Email',
+        title: t('emailLabel'),
         iconSrc: '/icons/drafts-white.svg',
         lines: ['info@vservice.it', 'vservicehelp@gmail.it'],
       },
     },
     {
       left: {
-        title: 'Telefono',
+        title: t('telefonoLabel'),
         iconSrc: '/icons/call-white.svg',
         lines: ['06 7610790', '06 76967940'],
       },
       right: {
-        title: 'Orari',
+        title: t('orariLabel'),
         iconSrc: '/icons/history-toggle-white.svg',
-        lines: ['Dal lunedì al venerdì', '8.00 - 13.00', '14.00 - 17.00'],
+        lines: [t('orariDays'), t('orariMorning'), t('orariAfternoon')],
       },
     },
   ]
@@ -114,9 +108,8 @@ export function ContactFormSection() {
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 p-8 md:p-12">
             {/* LEFT (50%) */}
             <div className="text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-10">Contatti</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-10">{t('sectionTitle')}</h2>
 
-              {/* 2x2 layout */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-14 gap-y-10">
                 {infoGrid.map((row, idx) => (
                   <div key={idx} className="contents">
@@ -127,18 +120,18 @@ export function ContactFormSection() {
               </div>
             </div>
 
-            {/* RIGHT (50%) - form with NO background card */}
+            {/* RIGHT (50%) */}
             <div>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input
-                  placeholder="Nome e cognome"
+                  placeholder={t('namePlaceholder')}
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
                 />
 
                 <Input
-                  placeholder="Email"
+                  placeholder={t('emailPlaceholder')}
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
@@ -147,7 +140,7 @@ export function ContactFormSection() {
                 />
 
                 <Input
-                  placeholder="Telefono"
+                  placeholder={t('phonePlaceholder')}
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
@@ -155,7 +148,7 @@ export function ContactFormSection() {
                 />
 
                 <Textarea
-                  placeholder="Messaggio"
+                  placeholder={t('messagePlaceholder')}
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
@@ -166,16 +159,16 @@ export function ContactFormSection() {
                   <CheckboxRow
                     checked={privacyChecked}
                     onChange={setPrivacyChecked}
-                    text={`Dichiaro di aver preso visione dell'Informativa ai sensi del Decreto Legislativo 196/2003 e del Regolamento (UE) 2016/679 (GDPR). (*) - Leggi l'Informativa`}
+                    text={t('privacyText')}
                   />
                   <CheckboxRow
                     checked={promoChecked}
                     onChange={setPromoChecked}
-                    text={`Autorizzo V. SERVICE SRL al trattamento dei miei dati personali per attività promozionali`}
+                    text={t('promoText')}
                   />
                 </div>
 
-                {/* Button - same width as fields */}
+                {/* Button */}
                 <div className="pt-2">
                   <button
                     type="submit"
@@ -183,15 +176,15 @@ export function ContactFormSection() {
                     className="w-full rounded-[40px] border border-v-faded bg-transparent px-5 py-3 text-sm font-semibold text-v-faded
                                placeholder:text-v-fadedoutline-none hover:border-v-faded transition disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Invio in corso...' : 'Invia messaggio'}
+                    {isSubmitting ? t('submitting') : t('submit')}
                   </button>
                 </div>
 
                 {submitStatus === 'success' && (
-                  <p className="text-sm text-green-200">Messaggio inviato con successo!</p> 
+                  <p className="text-sm text-green-200">{t('success')}</p>
                 )}
                 {submitStatus === 'error' && (
-                  <p className="text-sm text-red-200">Errore nell'invio del messaggio. Riprova.</p>
+                  <p className="text-sm text-red-200">{t('error')}</p>
                 )}
               </form>
             </div>
@@ -204,7 +197,13 @@ export function ContactFormSection() {
 
 /* ---------- Small components ---------- */
 
-function InfoBlock({ title, iconSrc, lines }: { title: string; iconSrc: string; lines: string[] }) {
+type InfoItem = {
+  title: string
+  iconSrc: string
+  lines: string[]
+}
+
+function InfoBlock({ title, iconSrc, lines }: InfoItem) {
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2 text-white font-semibold">

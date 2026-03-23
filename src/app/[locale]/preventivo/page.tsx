@@ -1,8 +1,7 @@
-export default function PreventivoPage() {
-  return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Richiedi Preventivo</h1>
-      <p>Compila il modulo per richiedere un preventivo personalizzato.</p>
-    </div>
-  )
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../(site)/preventivo/page'
+
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale)
+  return <SitePage />
 }

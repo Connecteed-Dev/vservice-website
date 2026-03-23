@@ -1,3 +1,5 @@
+import { newsArticles } from '@/content/news'
+
 export type NewsItem = {
   id: number | string;
   title: string;
@@ -7,9 +9,11 @@ export type NewsItem = {
   imageAlt?: string;
 };
 
-export const homeNews: NewsItem[] = [
-  { id: 1, title: "Titolo della notizia", dateLabel: "Data", href: "/news/1", imageSrc: "/news/news-1.jpg" },
-  { id: 2, title: "Titolo della notizia", dateLabel: "Data", href: "/news/2", imageSrc: "/news/news-2.jpg" },
-  { id: 3, title: "Titolo della notizia", dateLabel: "Data", href: "/news/3", imageSrc: "/news/news-3.jpg" },
-  { id: 4, title: "Titolo della notizia", dateLabel: "Data", href: "/news/4", imageSrc: "/news/news-4.jpg" },
-];
+export const homeNews: NewsItem[] = newsArticles.slice(0, 4).map((article, index) => ({
+  id: article.id,
+  title: article.title,
+  dateLabel: article.date,
+  href: `/news/${article.slug}`,
+  imageSrc: `/news/news-${index + 1}.jpg`,
+  imageAlt: article.title,
+}));

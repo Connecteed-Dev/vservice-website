@@ -1,6 +1,14 @@
+'use client'
+
 import Link from 'next/link'
+import { useReactiveLocale } from '@/hooks/useReactiveLocale'
+import { useTranslations } from 'next-intl'
+import { localeHref } from '@/lib/localeHref'
 
 export function TwentyYearsSection() {
+  const locale = useReactiveLocale()
+  const t = useTranslations('homepage.twentyYears')
+
   return (
     <section className="relative z-20 -mt-16 md:-mt-20 lg:-mt-24 pb-16 md:pb-20 lg:pb-24">
       <div className="container mx-auto px-4 lg:px-8">
@@ -9,37 +17,32 @@ export function TwentyYearsSection() {
             V.SERVICE
           </p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-snug">
-            20 anni di eccellenza in impianti di climatizzazione e riscaldamento
+            {t('title')}
           </h2>
           <div className="text-white/90 space-y-4 max-w-3xl mb-10">
-            <p>
-              V.Service, con un'ampia esperienza nel settore della
-              climatizzazione e del riscaldamento industriale e residenziale,
-              rappresenta un punto di riferimento di alto livello nel mercato.
-            </p>
-            <p>
-              Offriamo soluzioni su misura e assistenza continua, con interventi
-              rapidi, diagnosi precise e manutenzione programmata per garantire
-              efficienza e durata.
-            </p>
+            <p>{t('description1')}</p>
+            <p>{t('description2')}</p>
           </div>
 
           {/* Adjusted Grid layout for cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <MiniCard
-              title="Azienda"
-              text="Innovazione ed efficienza con un team competente."
-              href="/azienda"
+              title={t('azienda')}
+              text={t('aziendaDesc')}
+              buttonLabel={t('scopriDiPiu')}
+              href={localeHref(locale, '/azienda')}
             />
             <MiniCard
-              title="Assistenza Clienti"
-              text="Assistenza rapida e risolutiva: la priorità del cliente."
-              href="/contatti"
+              title={t('assistenzaClienti')}
+              text={t('assistenzaClientiDesc')}
+              buttonLabel={t('scopriDiPiu')}
+              href={localeHref(locale, '/contatti')}
             />
             <MiniCard
-              title="Servizi"
-              text="Servizi su misura. Vendita ricambi autorizzati."
-              href="/servizi"
+              title={t('servizi')}
+              text={t('serviziDesc')}
+              buttonLabel={t('scopriDiPiu')}
+              href={localeHref(locale, '/servizi')}
             />
           </div>
         </div>
@@ -51,10 +54,12 @@ export function TwentyYearsSection() {
 function MiniCard({
   title,
   text,
+  buttonLabel,
   href,
 }: {
   title: string
   text: string
+  buttonLabel: string
   href: string
 }) {
   return (
@@ -65,7 +70,7 @@ function MiniCard({
         href={href}
         className="inline-flex items-center px-5 py-2.5 bg-v-light text-white rounded-[40px] text-sm font-medium hover:bg-v-dark transition-colors"
       >
-        Scopri di più
+        {buttonLabel}
       </Link>
     </div>
   )

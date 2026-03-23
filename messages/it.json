@@ -1,0 +1,420 @@
+{
+  "navigation": {
+    "home": "Home",
+    "azienda": "Azienda",
+    "servizi": "Servizi",
+    "impianti": "Impianti",
+    "riscaldamento": "Riscaldamento",
+    "condizionamento": "Condizionamento",
+    "progettazione": "Progettazione e Installazione",
+    "manutenzione": "Manutenzione e Assistenza",
+    "contatti": "Contatti",
+    "news": "News",
+    "blog": "Blog",
+    "gallery": "Galleria",
+    "assistenzaClivet": "Assistenza Clivet",
+    "areaRiservata": "Area Riservata"
+  },
+
+  "header": {
+    "impiantiRiscaldamento": "Impianti di riscaldamento",
+    "impiantiCondizionamento": "Impianti di condizionamento",
+    "progettazioneInstallazione": "Progettazione e installazione",
+    "manutenzioneAssistenza": "Manutenzione e assistenza"
+  },
+
+  "footer": {
+    "contactsTitle": "Contatti",
+    "followUsTitle": "Seguici",
+    "operativeAddress": "Sede operativa via dei Quintili 55b, Roma",
+    "legalAddress": "Sede legale via dei Juverci n°28",
+    "tel": "Tel: 06 7610790",
+    "cell": "Cell: 06 76967940",
+    "email": "Email: info@vservice.it",
+    "copyright": "© 2026 V.Service. Tutti i diritti riservati."
+  },
+
+  "common": {
+    "discoverMore": "Scopri di più",
+    "contactUs": "Contattaci",
+    "viewAll": "Vedi tutte",
+    "readMore": "Leggi di più",
+    "learnMore": "Scopri di più"
+  },
+
+  "homepage": {
+    "hero": {
+      "title": "Calore e comfort... ovunque tu voglia",
+      "subtitle": "Scopri le nostre soluzioni innovative di riscaldamento"
+    },
+    "quoteServices": {
+      "title": "Richiedi un preventivo per i seguenti servizi",
+      "riscaldamento": "Impianti di riscaldamento",
+      "condizionamento": "Impianti di condizionamento",
+      "progettazione": "Progettazione e installazione",
+      "manutenzione": "Manutenzione e assistenza"
+    },
+    "twentyYears": {
+      "title": "20 anni di eccellenza in impianti di climatizzazione e riscaldamento",
+      "description1": "V.Service, con un'ampia esperienza nel settore della climatizzazione e del riscaldamento industriale e residenziale, rappresenta un punto di riferimento di alto livello nel mercato.",
+      "description2": "Offriamo soluzioni su misura e assistenza continua, con interventi rapidi, diagnosi precise e manutenzione programmata per garantire efficienza e durata.",
+      "azienda": "Azienda",
+      "aziendaDesc": "Innovazione ed efficienza con un team competente.",
+      "assistenzaClienti": "Assistenza Clienti",
+      "assistenzaClientiDesc": "Assistenza rapida e risolutiva: la priorità del cliente.",
+      "servizi": "Servizi",
+      "serviziDesc": "Servizi su misura. Vendita ricambi autorizzati.",
+      "scopriDiPiu": "Scopri di più"
+    },
+    "split": {
+      "title": "Ottimizza l'ambiente con soluzioni di climatizzazione avanzate",
+      "item1Body": "Trasformiamo la tua casa o il tuo ufficio in un ambiente confortevole, con sistemi di climatizzazione che uniscono efficienza energetica e massimo comfort. Efficienza garantita, controllo smart e assistenza continua per la tua tranquillità.",
+      "item2Body": "Progettazione, installazione e manutenzione di impianti di climatizzazione e riscaldamento per ambienti industriali e civili. Tecnologie all'avanguardia e certificazioni per qualità e sicurezza."
+    },
+    "ctaWide": {
+      "title": "Scopri le nostre soluzioni",
+      "subtitle": "Chiamaci e parla con un nostro esperto oggi!",
+      "buttonLabel": "Contattaci"
+    },
+    "certifications": {
+      "title": "Le nostre certificazioni",
+      "cert1Title": "Impianti industriali e civili",
+      "cert2Title": "Certificazioni FGas",
+      "cert3Title": "Certificazioni energetiche",
+      "description1": "Da oltre 20 anni realizziamo e manuteniamo impianti civili ed industriali, sia ad espansione diretta (gas) che indiretta (acqua), con piena soddisfazione della nostra clientela che seguiamo in ogni fase.",
+      "description2": "V.service è una società certificata iso9001-15 ed è anche certificata per la movimentazione dei gas refrigeranti.",
+      "description3": "I nostri tecnici sono a disposizione per la compilazione e la fornitura dei Libretti d'Impianto con codice Criter per i Libretti FGas e per il rilascio delle Certificazioni Energetiche dei vostri locali.",
+      "scopriDiPiu": "Scopri di più"
+    },
+    "newsStrip": {
+      "title": "Ultime news",
+      "vediTutte": "Vedi tutte"
+    }
+  },
+
+  "azienda": {
+    "hero": {
+      "title": "Azienda",
+      "subtitle": "La nostra storia, la nostra passione per il comfort"
+    },
+    "block1": {
+      "title": "V.Service: leader in climatizzazione e riscaldamento",
+      "body": "V.Service si afferma come un'azienda di riferimento nel settore della climatizzazione e riscaldamento industriale, per industria, capannoni, ospedali, uffici, condomini, aziende e residenziale, specializzata nella progettazione, installazione, manutenzione e assistenza di impianti di condizionamento e riscaldamento. Riconosciuta per la sua expertise specifica in questo ambito, V.Service è un punto di riferimento negli impianti di condizionamento e riscaldamento nel Lazio e tutto il centro Italia. Con oltre 20 anni di esperienza, l'azienda gestisce con competenza e professionalità la manutenzione di impianti civili ed industriali, sia a espansione diretta (gas) che indiretta (acqua)."
+    },
+    "block2": {
+      "title": "Un centro assistenza autorizzato",
+      "body": "V.Service, un centro assistenza autorizzato per marchi di prestigio come Clivet, M.T.A, Tecnair, Robur Lennox, si distingue nel settore del condizionamento e riscaldamento. Offrendo non solo assistenza ma anche un servizio di vendita di ricambi per questi marchi, V.Service risponde efficacemente alle esigenze dei suoi clienti. La società, vantando certificazioni importanti come la ISO 9001-15 e specializzazioni nella movimentazione dei gas refrigeranti, si pone come leader nel suo settore."
+    }
+  },
+
+  "contatti": {
+    "hero": {
+      "title": "Contatti",
+      "subtitle": "Contattaci per qualsiasi informazione sui nostri servizi"
+    },
+    "form": {
+      "sectionTitle": "Contatti",
+      "sedeLabel": "Sede",
+      "emailLabel": "Email",
+      "telefonoLabel": "Telefono",
+      "orariLabel": "Orari",
+      "sedeOperativa": "Sede operativa via dei Quintili 55b, Roma",
+      "sedeLegale": "Sede legale via dei Juvencin n°28",
+      "orariDays": "Dal lunedì al venerdì",
+      "orariMorning": "8.00 - 13.00",
+      "orariAfternoon": "14.00 - 17.00",
+      "namePlaceholder": "Nome e cognome",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Telefono",
+      "messagePlaceholder": "Messaggio",
+      "privacyText": "Dichiaro di aver preso visione dell'Informativa ai sensi del Decreto Legislativo 196/2003 e del Regolamento (UE) 2016/679 (GDPR). (*) - Leggi l'Informativa",
+      "promoText": "Autorizzo V. SERVICE SRL al trattamento dei miei dati personali per attività promozionali",
+      "submitting": "Invio in corso...",
+      "submit": "Invia messaggio",
+      "success": "Messaggio inviato con successo!",
+      "error": "Errore nell'invio del messaggio. Riprova."
+    }
+  },
+
+  "news": {
+    "hero": {
+      "title": "News",
+      "subtitle": "Le ultime novità dal settore"
+    },
+    "article": {
+      "heroTitle": "Articolo",
+      "heroSubtitle": "Dettagli della notizia",
+      "notFound": "Articolo non trovato",
+      "datePrefix": "Data:"
+    }
+  },
+
+  "gallery": {
+    "hero": {
+      "title": "Gallery",
+      "subtitle": "I nostri progetti e realizzazioni"
+    },
+    "content": {
+      "title": "Scopri le nostre realizzazioni",
+      "description": "Vogliamo mostrarvi i nostri successi: impianti installati, interventi di manutenzione e soluzioni personalizzate che hanno migliorato l'efficienza energetica e il comfort dei nostri clienti."
+    }
+  },
+
+  "blog": {
+    "hero": {
+      "title": "Blog"
+    },
+    "content": {
+      "title": "Tutte le novità in tema di risparmio energetico",
+      "description": "Volete scoprire come migliorare l'efficienza energetica e aumentare il comfort ambientale ottimizzando gli impianti di riscaldamento e condizionamento? Seguiteci sul nostro blog!"
+    }
+  },
+
+  "certificazioni": {
+    "hero": {
+      "title": "Certificazioni",
+      "subtitle": "Le nostre certificazioni di qualità e competenza"
+    }
+  },
+
+  "servizi": {
+    "hero": {
+      "title": "Servizi",
+      "subtitle": "Soluzioni complete per riscaldamento e climatizzazione"
+    },
+    "intro": {
+      "title": "Soluzioni complete per l'efficienza energetica",
+      "description": "Sei alla ricerca di servizi affidabili per il tuo impianto di riscaldamento e condizionamento? Siamo qui per aiutarti! La nostra azienda offre una vasta gamma di servizi specializzati per garantire l'efficienza energetica e il funzionamento ottimale dei tuoi impianti. Dai servizi di installazione di nuove pompe di calore, rooftop e caldaie, alla fornitura di documentazione completa per certificazioni energetiche, e alla compilazione dei libretti FGAS e d'impianto. Inoltre, offriamo servizi di contabilizzazione, lettura e bollettazione dei costi di riscaldamento per un monitoraggio preciso dei tuoi consumi. Il nostro team di assistenza tecnica è sempre pronto a intervenire per risolvere guasti e problemi sugli impianti esistenti, mentre la nostra diagnosi energetica ti aiuterà a ottimizzare l'uso delle risorse energetiche. Forniamo anche il servizio di terzo responsabile per la gestione e il controllo degli impianti e siamo un centro assistenza autorizzato per i marchi di fiducia. Scegli la nostra esperienza e competenza per garantire il massimo rendimento e l'efficienza dei tuoi impianti. Contattaci oggi per saperne di più sui nostri servizi."
+    },
+    "slug": {
+      "heroTitle": "Servizio",
+      "heroSubtitle": "Dettagli del servizio",
+      "details": "Dettagli del servizio."
+    },
+    "specializzati": {
+      "title": "Servizi specializzati per impianti di riscaldamento e condizionamento",
+      "description1": "Per ricevere assistenza sui prodotti Clivet in Italia, contatta il nostro centro assistenza autorizzato.",
+      "description2": "Per riparazioni di prodotti sia in garanzia che fuori garanzia, siamo specializzati nella manutenzione e nell'assistenza dei prodotti di climatizzazione per il settore industriale, terziario che per il settore residenziale.",
+      "description3": "Offriamo una serie di servizi per garantire tutte le funzionalità e i vantaggi delle vostre unità per tutta la durata della loro vita. Interventi rapidi e professionali per assicurare il buon funzionamento nel tempo dell'unità.",
+      "items": {
+        "pompeDiCalore": {
+          "title": "Pompe di calore/rooftop/caldaie",
+          "description": "Installazione di nuove pompe di calore, rooftop e caldaie su impianti esistenti. Migliora l'efficienza energetica e il comfort termico."
+        },
+        "certificazioniEnergetiche": {
+          "title": "Certificazioni energetiche",
+          "description": "Fornitura di documentazione completa per certificazioni energetiche per impianti di riscaldamento e condizionamento."
+        },
+        "librettiFgas": {
+          "title": "Libretti FGAS",
+          "description": "Compilazione e fornitura dei libretti FGAS. Assicura la conformità normativa del tuo impianto."
+        },
+        "librettiImpianto": {
+          "title": "Libretti d'impianto",
+          "description": "Un documento obbligatorio che deve essere redatto per tutti gli impianti di climatizzazione."
+        },
+        "riscaldamento": {
+          "title": "Riscaldamento",
+          "description": "Contabilizzazione, lettura e bollettazione dei costi di riscaldamento. Monitora e gestisci in modo efficiente i tuoi consumi energetici."
+        },
+        "assistenzaTecnica": {
+          "title": "Assistenza tecnica su impianti esistenti",
+          "description": "Tecnici specializzati per risolvere guasti e problemi sui tuoi impianti. Ripristina la loro efficienza in breve tempo."
+        },
+        "diagnosiEnergetica": {
+          "title": "Diagnosi energetica",
+          "description": "Analisi dettagliata delle prestazioni energetiche del tuo impianto. Ottimizza l'uso delle risorse energetiche."
+        },
+        "terzoResponsabile": {
+          "title": "Ruolo terzo responsabile",
+          "description": "Gestione e controllo degli impianti da parte di un responsabile tecnico qualificato, nel pieno rispetto delle normative vigenti."
+        },
+        "centroAssistenza": {
+          "title": "Centro assistenza autorizzato",
+          "description": "Centro di assistenza autorizzato per marchi di fiducia. Affidati a noi per manutenzione e riparazioni certificate."
+        },
+        "venditaRicambi": {
+          "title": "Vendita ricambi",
+          "description": "Vendita ricambi autorizzati e originali dei marchi Clivet, Lennox, Robur, Tecnair Lv, Viesman."
+        }
+      }
+    }
+  },
+
+  "assistenzaClivet": {
+    "hero": {
+      "title": "Assistenza Clivet"
+    },
+    "section": {
+      "title": "Assistenza autorizzata di sistemi Clivet",
+      "description1": "Per ricevere assistenza sui prodotti Clivet in Italia, contatta il nostro centro assistenza autorizzato.",
+      "description2": "Per riparazioni di prodotti sia in garanzia che fuori garanzia, siamo specializzati nella manutenzione e nell'assistenza dei prodotti di climatizzazione per il settore industriale, terziario che per il settore residenziale.",
+      "description3": "Offriamo una serie di servizi per garantire tutte le funzionalità e i vantaggi delle vostre unità per tutta la durata della loro vita. Interventi rapidi e professionali per assicurare il buon funzionamento nel tempo dell'unità.",
+      "vrf": {
+        "title": "Impianti e sistemi VRF",
+        "primoAvviamento": "Primo avviamento",
+        "diagnosiSistema": "Diagnosi di sistema",
+        "manutenzioneOrdinaria": "Manutenzione ordinaria",
+        "manutenzioneStaordinaria": "Manutenzione straordinaria",
+        "controlloEfficienza": "Controllo efficienza"
+      },
+      "manutenzioneOrdinaria": {
+        "title": "Manutenzione ordinaria pompe di calore Clivet",
+        "valoriTermodinamici": "Controllo valori termodinamici",
+        "assorbimentiElettrici": "Verifica assorbimenti elettrici",
+        "resoImpianto": "Verifica reso impianto",
+        "perditeGas": "Controllo perdite gas refrigerante"
+      },
+      "manutenzioneStaordinaria": {
+        "title": "Manutenzione straordinaria pompe di calore Clivet",
+        "ricercaGuasti": "Ricerca guasti",
+        "riparazioni": "Riparazioni",
+        "diagnosiComputerizzata": "Diagnosi computerizzata"
+      },
+      "vendita": {
+        "title": "Vendita ricambi",
+        "ricambiOriginali": "Vendita ricambi autorizzati e originali"
+      }
+    },
+    "startup": {
+      "title": "Start-up e messa a punto impianti con garanzia",
+      "subtitle": "Tecnici specializzati per Sistemi Clivet",
+      "description": "Il nostro staff è a disposizione per start-up e messa a punto impianti con convalida della garanzia, secondo le indicazioni della casa madre. Grazie alla notevole esperienza maturata nel settore e ad uno staff tecnico costantemente aggiornato, V.Services è l'interlocutore ideale per la risoluzione di qualunque genere di imprevisto o guasto agli impianti dei marchi di cui è partner."
+    }
+  },
+
+  "impianti": {
+    "riscaldamento": {
+      "progettazione": {
+        "hero": {
+          "title": "Progettazione e Installazione",
+          "subtitle": "Impianti di Riscaldamento"
+        },
+        "section1": {
+          "title": "Progettazione e installazione di impianti di riscaldamento",
+          "description1": "Specializzati nella progettazione e installazione di nuovi impianti di riscaldamento, siamo esperti nel fornire soluzioni su misura per azienda, ufficio, condominio, capannoni, ospedali, industrie e soluzioni abitative. Il nostro processo inizia con una fase preliminare di analisi e valutazione delle alternative, eseguita da tecnici specializzati. Questo approccio garantisce che ogni cliente riceva la proposta più adatta per il proprio ambiente.",
+          "description2": "Focalizzati sulla scelta di apparecchiature di ultima generazione, offriamo sistemi che non solo riscaldano gli ambienti ma ne migliorano anche la qualità. Questi impianti sono progettati per riciclare, filtrare e purificare l'aria, oltre a deumidificarla. In alcuni casi, offriamo soluzioni che combinano queste funzioni con il riscaldamento dell'ambiente, garantendo così un comfort ottimale e un ambiente salubre. La nostra dedizione all'innovazione e alla qualità assicura che ogni progetto di riscaldamento sia efficiente, sostenibile e perfettamente in linea con le esigenze specifiche dei nostri clienti."
+        },
+        "section2": {
+          "title": "Progettazione e manutenzione di impianti termici su misura",
+          "description1": "La nostra specializzazione nella progettazione e realizzazione di impianti termici e di riscaldamento ci posiziona come leader nel settore. Non solo realizziamo impianti, ma ci occupiamo anche della loro gestione e manutenzione, fornendo un supporto consulenziale di valore. Ogni sistema che progettiamo è personalizzato per soddisfare le specifiche esigenze dei nostri clienti, realizzato con metodo accurato e infine certificato per garantire la massima efficienza e sicurezza. I tecnici di V.Service sono altamente specializzati nella manutenzione di generatori e possiedono tutti i requisiti necessari per la gestione, la manutenzione e l'installazione di questi impianti.",
+          "description2": "Questa competenza approfondita assicura che ogni impianto termico e di riscaldamento sia non solo funzionale ed efficiente, ma anche in linea con gli standard normativi più elevati. Con V.Service, i clienti possono aspettarsi soluzioni termiche e di riscaldamento di alta qualità, personalizzate per le loro necessità specifiche."
+        }
+      },
+      "manutenzione": {
+        "hero": {
+          "title": "Manutenzione e assistenza",
+          "subtitle": "Impianti di Riscaldamento"
+        },
+        "section1": {
+          "title": "Professionisti nella manutenzione e assistenza termica",
+          "description1": "Siamo qui per garantire il corretto funzionamento dei tuoi impianti di riscaldamento industriali e civili. Il nostro team di tecnici esperti è disponibile per interventi di riparazione su appuntamento o in pronto intervento, fornendo assistenza affidabile.",
+          "description2": "La manutenzione è fondamentale per assicurare minori consumi energetici, il rispetto delle norme vigenti e la longevità del tuo sistema termico. Prenota ora una revisione per ottimizzare le prestazioni del tuo impianto. La assistenza è il nostro punto di forza quando si tratta di caldaie sicure ed efficienti. Scegli la qualità dei servizi offerti dai nostri specialisti per garantire il massimo rendimento del tuo sistema.",
+          "description3": "I nostri interventi sono conformi alle normative di legge e coprono una vasta gamma di clienti, tra cui locali commerciali, locali direzionali, industrie e unità abitative. Siamo qui per soddisfare tutte le tue esigenze di manutenzione e assistenza termica."
+        },
+        "section2": {
+          "title": "Manutenzione caldaie",
+          "description1": "La manutenzione delle caldaie è regolata dai DPR 412/93-551/93 e D.Lgs. 192/05-311/06 e successive modifiche, che obbligano il responsabile della caldaia a far eseguire da personale professionalmente qualificato la manutenzione periodica. Con V Services avrai la sicurezza di una manutenzione a norma di legge: targatura impianto/analisi fumi/rilascio allegato obbligatorio/pulizia caldaia. Per la tua caldaia affidati a V Services. Scopri i nostri programmi di manutenzione, i nostri tecnici sapranno consigliarti al meglio. Grazie a un'esperienza decennale e a un personale altamente qualificato, V Services è un'azienda leader nell'assistenza e manutenzione di caldaie. Con i nostri servizi siamo in grado di garantire più sicurezza, più risparmio e prestazioni migliori. I nostri tecnici ti offriranno in ogni momento un'assistenza tempestiva e qualificata, aiutando la tua caldaia a mantenere nel tempo prestazioni elevate e migliori performance di utilizzo."
+        },
+        "cosaOffriamo": {
+          "title": "Cosa offriamo",
+          "rapidita": "Rapidità",
+          "copertura": "Copertura del territorio",
+          "personale": "Personale qualificato",
+          "controlli": "Controlli certificati",
+          "checkup": "Check-Up"
+        }
+      }
+    },
+    "condizionamento": {
+      "progettazione": {
+        "hero": {
+          "title": "Progettazione e installazione",
+          "subtitle": "Impianti di condizionamento"
+        },
+        "section1": {
+          "title": "Scopri i nostri impianti: comfort e risparmio energetico garantiti",
+          "description1": "Progettare e installare un impianto di condizionamento di ultima generazione è la scelta migliore da fare per i molti vantaggi che porta, sia in termini di miglioramento della qualità della vita di chi occupa l'ambiente, sia in termini di risparmio energetico e, quindi, economico che ne derivano. Un impianto di climatizzazione permette di regolare la temperatura interna, sia che ci sia molto caldo, sia che sia freddo, ma non solo, oltre a restituire una temperatura ideale e costante nell'ambiente in cui è inserito, permette di mantenere il giusto livello di umidità.",
+          "description2": "In più, le moderne soluzioni di condizionamento svolgono un'azione di purificazione dell'aria, che viene filtrata, migliorando così notevolmente la vivibilità nello spazio. Esistono varie soluzioni di impianto per industria, capannoni, ospedali, uffici, condomini, aziende e anche per la casa. Il nostro team di installatori esperti è in grado di progettare e installare impianti su misura per condomini, industria, capannoni, ospedali, per grandi aziende, laboratori, officine, negozi, uffici e per case private e singole unità abitative."
+        },
+        "section2": {
+          "title": "Gli esperti nella climatizzazione",
+          "description1": "V.Services è la scelta ideale per tutti coloro che cercano professionisti del freddo specializzati nella progettazione e nell'installazione di impianti di condizionamento delle migliori marche. Siamo esperti nel fornire soluzioni di climatizzazione per locali industriali e civili. Con la nostra esperienza e competenza, garantiamo un servizio puntuale e affidabile per l'installazione e la riparazione dei tuoi condizionatori.",
+          "description2": "Qualsiasi sia lo spazio, noi interveniamo allo scopo di migliorare il comfort e abbassare i consumi energetici. I nostri tecnici qualificati sono in grado di offrire consulenza personalizzata, progettazione su misura e installazione professionale per garantire il massimo rendimento e la soddisfazione del cliente."
+        },
+        "section3": {
+          "title": "Soluzioni su misura per ambienti industriali, commerciali e civili",
+          "description1": "Offriamo servizi completi di progettazione e installazione impianti di condizionamento per ogni tipo di ambiente. Dalle piccole abitazioni ai grandi complessi industriali, dai negozi agli uffici, dai capannoni alle strutture sanitarie, abbiamo la soluzione giusta per ogni esigenza di climatizzazione.",
+          "description2": "La nostra esperienza ventennale nel settore ci permette di analizzare le specifiche necessità di ogni cliente e proporre l'impianto più adatto in termini di efficienza, consumi e costi. Utilizziamo solo prodotti delle migliori marche e tecnologie all'avanguardia per garantire prestazioni eccellenti e durature nel tempo."
+        }
+      },
+      "manutenzione": {
+        "hero": {
+          "title": "Manutenzione e assistenza",
+          "subtitle": "Impianti di condizionamento"
+        },
+        "section1": {
+          "title": "Soluzioni su misura per ambienti industriali e civili",
+          "description1": "Il tuo impianto per il condizionamento richiede una manutenzione periodica per garantire le migliori prestazioni ed evitare rischi per la salute. Con il nostro servizio di manutenzione potrai contare sempre su una squadra di professionisti esperti e preparati. È importante affidarsi sempre a tecnici qualificati, certificati e aggiornati. I nostri clienti: industrie, capannoni, ospedali, locali commerciali, locali direzionali, uffici, negozi, condomini, e anche unità abitative.",
+          "description2": "V.Services offre ai propri clienti servizi di assistenza tecnica specializzata su impianti di condizionamento. Grazie alla notevole esperienza maturata nel settore e ad uno staff tecnico costantemente aggiornato, V.Services è l'interlocutore ideale per la risoluzione di qualunque genere di imprevisto o guasto agli impianti dei marchi di cui è partner. Operiamo offrendo un servizio completo per la manutenzione degli impianti di condizionamento e climatizzazione dei migliori marchi presenti sul mercato.",
+          "description3": "I climatizzatori e condizionatori sono equiparati agli impianti di riscaldamento e per questo, secondo il DM 20/6/2014, devono essere dotati di libretto impianto e sottoposti a controlli periodici sull'efficienza ogni 4 anni, se hanno una potenza superiore a 10 kw per quelli invernali, e 12 kw per quelli estivi. Tali manutenzioni e controlli periodici hanno l'obiettivo di garantire la sicurezza e la salubrità degli apparecchi installati."
+        },
+        "section2": {
+          "title": "Un team qualificato ed efficiente",
+          "description1": "I nostri tecnici effettuano sistematicamente corsi di aggiornamento al fine di garantire un servizio efficiente e professionale ed un servizio di manutenzione preventiva di alta qualità per impianti di condizionamento condominiali anche grazie alle attrezzature a disposizione di ultima concezione. Eseguiamo inoltre interventi tecnici su chiamata per ripristino guasti, ovvero interventi straordinari di manutenzione in ogni momento e in modo tempestivo per riportare gli impianti a funzionare correttamente. Offriamo contratti per un'assistenza 24 ore su 24 per la manutenzione e la risoluzione di problematiche improvvise sull'impianto di condizionamento e climatizzazione."
+        }
+      }
+    }
+  },
+
+  "preventivo": {
+    "hero": {
+      "title": "Richiedi Preventivo",
+      "subtitle": "Compila il modulo per richiedere un preventivo personalizzato"
+    }
+  },
+
+  "servicesGrid": {
+    "title": "I Nostri Servizi",
+    "description": "Offriamo soluzioni complete per climatizzazione e riscaldamento, con un team di tecnici specializzati sempre a tua disposizione.",
+    "items": {
+      "climatizzazione": {
+        "title": "Climatizzazione",
+        "description": "Installazione e manutenzione di impianti di climatizzazione per ambienti civili e industriali."
+      },
+      "riscaldamento": {
+        "title": "Riscaldamento",
+        "description": "Soluzioni complete per il riscaldamento con caldaie a condensazione e pompe di calore."
+      },
+      "manutenzione": {
+        "title": "Manutenzione",
+        "description": "Servizi di manutenzione programmata per garantire efficienza e durata nel tempo."
+      },
+      "assistenza24": {
+        "title": "Assistenza 24/7",
+        "description": "Interventi rapidi e assistenza tecnica disponibile 24 ore su 24, 7 giorni su 7."
+      }
+    }
+  },
+
+  "newsArticles": {
+    "1": {
+      "title": "Nuove pompe di calore: efficienza energetica al top",
+      "excerpt": "Le ultime generazioni di pompe di calore offrono prestazioni eccezionali con consumi ridotti.",
+      "content": "Le nuove pompe di calore rappresentano il futuro del riscaldamento domestico e industriale.",
+      "category": "Innovazione"
+    },
+    "2": {
+      "title": "Manutenzione primaverile: perché è importante",
+      "excerpt": "La manutenzione stagionale dei tuoi impianti garantisce efficienza e durata nel tempo.",
+      "content": "Con l'arrivo della primavera è il momento ideale per effettuare la manutenzione degli impianti.",
+      "category": "Consigli"
+    },
+    "3": {
+      "title": "Bonus ristrutturazione 2024: come approfittarne",
+      "excerpt": "Le novità sulle detrazioni fiscali per l'efficientamento energetico degli edifici.",
+      "content": "Il 2024 porta importanti novità per quanto riguarda i bonus fiscali.",
+      "category": "Fiscalità"
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { getTranslations } from 'next-intl/server'
 import Image from "next/image";
 import { ClippedBox, ClipVariant } from "@/components/ui/ClippedBox";
 
@@ -8,23 +9,21 @@ type SplitItem = {
   body: string;
 };
 
-export function SplitSection() {
-  const title = "Ottimizza l'ambiente con soluzioni di climatizzazione avanzate";
+export async function SplitSection() {
+  const t = await getTranslations('homepage.split')
 
   const items: SplitItem[] = [
     {
       variant: "imageLeft",
       imageSrc: "/debt.png",
       imageAlt: "Soggiorno con climatizzatore",
-      body:
-        "Trasformiamo la tua casa o il tuo ufficio in un ambiente confortevole, con sistemi di climatizzazione che uniscono efficienza energetica e massimo comfort. Efficienza garantita, controllo smart e assistenza continua per la tua tranquillità.",
+      body: t('item1Body'),
     },
     {
       variant: "imageRight",
       imageSrc: "/debt1.png",
       imageAlt: "Climatizzatore vicino a finestra",
-      body:
-        "Progettazione, installazione e manutenzione di impianti di climatizzazione e riscaldamento per ambienti industriali e civili. Tecnologie all'avanguardia e certificazioni per qualità e sicurezza.",
+      body: t('item2Body'),
     },
   ];
 
@@ -32,7 +31,7 @@ export function SplitSection() {
     <section className="bg-v-white py-16 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-v-dark mb-10">
-          {title}
+          {t('title')}
         </h2>
 
         <div className="flex flex-col gap-10">
@@ -49,8 +48,8 @@ function SplitRow({ variant, imageSrc, imageAlt, body }: SplitItem) {
   const isImageLeft = variant === "imageLeft";
 
   const clipVariant: ClipVariant = isImageLeft
-    ? "splitImageCutRight" // image on LEFT => cut on RIGHT side of the image
-    : "splitImageCutLeft"; // image on RIGHT => cut on LEFT side of the image
+    ? "splitImageCutRight"
+    : "splitImageCutLeft";
 
   return (
     <div className="bg-v-faded rounded-[20px] overflow-hidden grid grid-cols-1 lg:grid-cols-2">

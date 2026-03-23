@@ -1,15 +1,7 @@
-import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
-import { AziendaSection2 } from '@/components/sections/azienda/AziendaSection2'
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../(site)/azienda/page'
 
-export default function AziendaPage() {
-  return (
-    <>
-      <HeroPageTitle
-        title="Azienda"
-        subtitle="La nostra storia, la nostra passione per il comfort"
-        backgroundImage="/hero/herobg-Azienda.png"
-      />
-      <AziendaSection2 />
-    </>
-  )
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale)
+  return <SitePage />
 }

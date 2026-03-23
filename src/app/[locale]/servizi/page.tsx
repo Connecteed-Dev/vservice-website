@@ -1,15 +1,7 @@
-import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
-import { ServiziSpecializzatiSection } from '@/components/sections/servizi/ServiziSpecializzatiSection'
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../(site)/servizi/page'
 
-export default function ServiziPage() {
-  return (
-    <>
-      <HeroPageTitle
-        title="Servizi"
-        subtitle="Soluzioni complete per riscaldamento e climatizzazione"
-        backgroundImage="/servizi/servizi-hero-image.png"
-      />
-      <ServiziSpecializzatiSection />
-    </>
-  )
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale)
+  return <SitePage />
 }

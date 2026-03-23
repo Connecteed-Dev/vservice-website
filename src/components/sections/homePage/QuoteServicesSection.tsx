@@ -1,5 +1,10 @@
+'use client'
+
 import { ClippedBox } from '@/components/ui/ClippedBox'
 import Link from 'next/link'
+import { useReactiveLocale } from '@/hooks/useReactiveLocale'
+import { useLocale, useTranslations } from 'next-intl'
+import { localeHref } from '@/lib/localeHref'
 
 type ServiceButton = {
   text: string
@@ -7,26 +12,29 @@ type ServiceButton = {
 }
 
 export function QuoteServicesSection() {
+  const locale = useLocale()
+  const t = useTranslations('homepage.quoteServices')
+  
   return (
     <section className="bg-v-faded py-16 md:py-20">
       <div className="container mx-auto px-4 lg:px-8">
         <h2 className="text-xl md:text-2xl font-semibold text-v-dark mb-8">
-          Richiedi un preventivo per i seguenti servizi
+          {t('title')}
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ServiceQuoteCard
-            title="Impianti di riscaldamento"
+            title={t('riscaldamento')}
             pills={[
-              { text: 'Progettazione e installazione', href: '/impianti/riscaldamento/progettazione-e-installazione' },
-              { text: 'Manutenzione e assistenza', href: '/impianti/riscaldamento/manutenzione-e-assistenza' },
+              { text: t('progettazione'), href: localeHref(locale, '/impianti/riscaldamento/progettazione-e-installazione') },
+              { text: t('manutenzione'), href: localeHref(locale, '/impianti/riscaldamento/manutenzione-e-assistenza') },
             ]}
           />
           <ServiceQuoteCard
-            title="Impianti di condizionamento"
+            title={t('condizionamento')}
             pills={[
-              { text: 'Progettazione e installazione', href: '/impianti/condizionamento/progettazione-e-installazione' },
-              { text: 'Manutenzione e assistenza', href: '/impianti/condizionamento/manutenzione-e-assistenza' },
+              { text: t('progettazione'), href: localeHref(locale, '/impianti/condizionamento/progettazione-e-installazione') },
+              { text: t('manutenzione'), href: localeHref(locale, '/impianti/condizionamento/manutenzione-e-assistenza') },
             ]}
           />
         </div>

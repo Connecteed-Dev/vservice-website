@@ -1,12 +1,15 @@
+import { getTranslations } from 'next-intl/server'
 import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
 import { NewsStripSection } from '@/components/sections/homePage/NewsStripSection'
 
-export default function NewsPage() {
+export default async function NewsPage() {
+  const t = await getTranslations('news.hero')
+
   return (
     <>
       <HeroPageTitle
-        title="News"
-        subtitle="Le ultime novità dal settore"
+        title={t('title')}
+        subtitle={t('subtitle')}
         backgroundImage="/news/news-hero-image.png"
       />
       <NewsStripSection />

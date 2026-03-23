@@ -1,8 +1,7 @@
-export default function NewsArticlePage({ params }: { params: { slug: string } }) {
-  return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Articolo: {params.slug}</h1>
-      <p>Contenuto dell'articolo.</p>
-    </div>
-  )
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../../(site)/news/[slug]/page'
+
+export default async function Page({ params }: { params: { locale: string; slug: string } }) {
+  setRequestLocale(params.locale)
+  return <SitePage params={{ slug: params.slug }} />
 }

@@ -1,8 +1,7 @@
-export default function GalleryPage() {
-  return (
-    <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Galleria</h1>
-      <p>I nostri progetti e realizzazioni.</p>
-    </div>
-  )
+import { setRequestLocale } from 'next-intl/server'
+import SitePage from '../../(site)/gallery/page'
+
+export default async function Page({ params: { locale } }: { params: { locale: string } }) {
+  setRequestLocale(locale)
+  return <SitePage />
 }

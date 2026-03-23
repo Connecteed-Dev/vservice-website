@@ -1,20 +1,23 @@
+import { getTranslations } from 'next-intl/server'
 import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
 import { ContentSectionWithImage } from '@/components/sections/ContentSectionWithImage'
 import { CTAWide } from '@/components/sections/CTAWide'
 
-export default function GalleryPage() {
+export default async function GalleryPage() {
+  const t = await getTranslations('gallery')
+
   return (
     <>
       <HeroPageTitle
-        title="Gallery"
-        subtitle="I nostri progetti e realizzazioni"
+        title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         backgroundImage="/hero/herobg-gallery.png"
       />
       <ContentSectionWithImage
         imageSrc="/bgcards/bgGalleryImgcut.png"
         imageAlt="Gallery background image"
-        title="Scopri le nostre realizzazioni"
-        description="Vogliamo mostrarvi i nostri successi: impianti installati, interventi di manutenzione e soluzioni personalizzate che hanno migliorato l'efficienza energetica e il comfort dei nostri clienti."
+        title={t('content.title')}
+        description={t('content.description')}
       />
       <CTAWide />
     </>

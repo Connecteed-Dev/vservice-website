@@ -1,0 +1,420 @@
+{
+  "navigation": {
+    "home": "Home",
+    "azienda": "Company",
+    "servizi": "Services",
+    "impianti": "Systems",
+    "riscaldamento": "Heating",
+    "condizionamento": "Air Conditioning",
+    "progettazione": "Design and Installation",
+    "manutenzione": "Maintenance and Support",
+    "contatti": "Contacts",
+    "news": "News",
+    "blog": "Blog",
+    "gallery": "Gallery",
+    "assistenzaClivet": "Clivet Support",
+    "areaRiservata": "Reserved Area"
+  },
+
+  "header": {
+    "impiantiRiscaldamento": "Heating Systems",
+    "impiantiCondizionamento": "Air Conditioning Systems",
+    "progettazioneInstallazione": "Design and Installation",
+    "manutenzioneAssistenza": "Maintenance and Support"
+  },
+
+  "footer": {
+    "contactsTitle": "Contacts",
+    "followUsTitle": "Follow Us",
+    "operativeAddress": "Operative address: Via dei Quintili 55b, Rome",
+    "legalAddress": "Legal address: Via dei Juverci n°28",
+    "tel": "Tel: 06 7610790",
+    "cell": "Cell: 06 76967940",
+    "email": "Email: info@vservice.it",
+    "copyright": "© 2026 V.Service. All rights reserved."
+  },
+
+  "common": {
+    "discoverMore": "Discover More",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "readMore": "Read More",
+    "learnMore": "Learn More"
+  },
+
+  "homepage": {
+    "hero": {
+      "title": "Warmth and comfort... wherever you want",
+      "subtitle": "Discover our innovative heating solutions"
+    },
+    "quoteServices": {
+      "title": "Request an estimate for the following services",
+      "riscaldamento": "Heating Systems",
+      "condizionamento": "Air Conditioning Systems",
+      "progettazione": "Design and Installation",
+      "manutenzione": "Maintenance and Support"
+    },
+    "twentyYears": {
+      "title": "20 years of excellence in heating and air conditioning systems",
+      "description1": "V.Service, with extensive experience in industrial and residential heating and air conditioning, represents a high-level reference point in the market.",
+      "description2": "We offer customized solutions and continuous assistance, with rapid interventions, precise diagnostics, and scheduled maintenance to ensure efficiency and durability.",
+      "azienda": "Company",
+      "aziendaDesc": "Innovation and efficiency with a competent team.",
+      "assistenzaClienti": "Customer Support",
+      "assistenzaClientiDesc": "Fast and effective support: customer priority.",
+      "servizi": "Services",
+      "serviziDesc": "Custom services. Authorized spare parts sales.",
+      "scopriDiPiu": "Discover More"
+    },
+    "split": {
+      "title": "Optimize your environment with advanced air conditioning solutions",
+      "item1Body": "We transform your home or office into a comfortable environment, with air conditioning systems that combine energy efficiency and maximum comfort. Guaranteed efficiency, smart control and continuous assistance for your peace of mind.",
+      "item2Body": "Design, installation and maintenance of heating and air conditioning systems for industrial and civil environments. Advanced technologies and certifications for quality and safety."
+    },
+    "ctaWide": {
+      "title": "Discover our solutions",
+      "subtitle": "Call us and speak with one of our experts today!",
+      "buttonLabel": "Contact Us"
+    },
+    "certifications": {
+      "title": "Our Certifications",
+      "cert1Title": "Industrial and civil systems",
+      "cert2Title": "FGas Certifications",
+      "cert3Title": "Energy certifications",
+      "description1": "For over 20 years, we have been creating and maintaining civil and industrial systems, both direct expansion (gas) and indirect (water), with full satisfaction of our clients whom we assist in every phase.",
+      "description2": "V.service is an ISO9001-15 certified company and is also certified for handling refrigerant gases.",
+      "description3": "Our technicians are available for compiling and providing System Registers with Criter code for FGAS Registers and for issuing Energy Certifications for your premises.",
+      "scopriDiPiu": "Discover More"
+    },
+    "newsStrip": {
+      "title": "Latest News",
+      "vediTutte": "View All"
+    }
+  },
+
+  "azienda": {
+    "hero": {
+      "title": "Company",
+      "subtitle": "Our history, our passion for comfort"
+    },
+    "block1": {
+      "title": "V.Service: leader in heating and air conditioning",
+      "body": "V.Service is a reference company in the industrial heating and air conditioning sector, for industry, warehouses, hospitals, offices, condominiums, businesses and residential, specializing in the design, installation, maintenance and assistance of air conditioning and heating systems. Recognized for its specific expertise in this field, V.Service is a benchmark for air conditioning and heating systems in Lazio and throughout central Italy. With over 20 years of experience, the company manages with competence and professionalism the maintenance of civil and industrial systems, both direct expansion (gas) and indirect (water)."
+    },
+    "block2": {
+      "title": "An authorized service center",
+      "body": "V.Service, an authorized service center for prestigious brands such as Clivet, M.T.A, Tecnair, Robur Lennox, stands out in the conditioning and heating sector. Offering not only assistance but also a spare parts sales service for these brands, V.Service effectively meets its clients' needs. The company, boasting important certifications such as ISO 9001-15 and specializations in handling refrigerant gases, positions itself as a leader in its sector."
+    }
+  },
+
+  "contatti": {
+    "hero": {
+      "title": "Contacts",
+      "subtitle": "Contact us for any information about our services"
+    },
+    "form": {
+      "sectionTitle": "Contacts",
+      "sedeLabel": "Address",
+      "emailLabel": "Email",
+      "telefonoLabel": "Phone",
+      "orariLabel": "Hours",
+      "sedeOperativa": "Operative address: Via dei Quintili 55b, Rome",
+      "sedeLegale": "Legal address: Via dei Juvencin n°28",
+      "orariDays": "Monday to Friday",
+      "orariMorning": "8:00 - 13:00",
+      "orariAfternoon": "14:00 - 17:00",
+      "namePlaceholder": "Full name",
+      "emailPlaceholder": "Email",
+      "phonePlaceholder": "Phone",
+      "messagePlaceholder": "Message",
+      "privacyText": "I declare that I have read the Privacy Policy pursuant to Legislative Decree 196/2003 and Regulation (EU) 2016/679 (GDPR). (*) - Read the Policy",
+      "promoText": "I authorize V. SERVICE SRL to process my personal data for promotional activities",
+      "submitting": "Sending...",
+      "submit": "Send message",
+      "success": "Message sent successfully!",
+      "error": "Error sending the message. Please try again."
+    }
+  },
+
+  "news": {
+    "hero": {
+      "title": "News",
+      "subtitle": "The latest news from the sector"
+    },
+    "article": {
+      "heroTitle": "Article",
+      "heroSubtitle": "News details",
+      "notFound": "Article not found",
+      "datePrefix": "Date:"
+    }
+  },
+
+  "gallery": {
+    "hero": {
+      "title": "Gallery",
+      "subtitle": "Our projects and achievements"
+    },
+    "content": {
+      "title": "Discover our achievements",
+      "description": "We want to show you our successes: installed systems, maintenance interventions and customized solutions that have improved the energy efficiency and comfort of our clients."
+    }
+  },
+
+  "blog": {
+    "hero": {
+      "title": "Blog"
+    },
+    "content": {
+      "title": "All the latest news on energy saving",
+      "description": "Do you want to discover how to improve energy efficiency and increase environmental comfort by optimizing heating and air conditioning systems? Follow us on our blog!"
+    }
+  },
+
+  "certificazioni": {
+    "hero": {
+      "title": "Certifications",
+      "subtitle": "Our quality and competence certifications"
+    }
+  },
+
+  "servizi": {
+    "hero": {
+      "title": "Services",
+      "subtitle": "Complete solutions for heating and air conditioning"
+    },
+    "intro": {
+      "title": "Complete solutions for energy efficiency",
+      "description": "Are you looking for reliable services for your heating and air conditioning system? We are here to help you! Our company offers a wide range of specialized services to ensure energy efficiency and optimal operation of your systems. From installation services for new heat pumps, rooftops and boilers, to the supply of complete documentation for energy certifications, and the compilation of FGAS and system booklets. We also offer accounting, reading and billing services for heating costs for precise monitoring of your consumption. Our technical assistance team is always ready to intervene to resolve faults and problems on existing systems, while our energy diagnosis will help you optimize the use of energy resources. We also provide the third responsible service for the management and control of systems and we are an authorized service center for trusted brands. Choose our experience and expertise to ensure maximum performance and efficiency of your systems. Contact us today to find out more about our services."
+    },
+    "slug": {
+      "heroTitle": "Service",
+      "heroSubtitle": "Service details",
+      "details": "Service details."
+    },
+    "specializzati": {
+      "title": "Specialized services for heating and air conditioning systems",
+      "description1": "To receive assistance on Clivet products in Italy, contact our authorized service center.",
+      "description2": "For repairs of products both under and out of warranty, we specialize in the maintenance and assistance of air conditioning products for the industrial, tertiary and residential sectors.",
+      "description3": "We offer a range of services to guarantee all the functions and advantages of your units for their entire life. Fast and professional interventions to ensure the proper functioning of the unit over time.",
+      "items": {
+        "pompeDiCalore": {
+          "title": "Heat pumps / rooftop / boilers",
+          "description": "Installation of new heat pumps, rooftops and boilers on existing systems. Improve energy efficiency and thermal comfort."
+        },
+        "certificazioniEnergetiche": {
+          "title": "Energy certifications",
+          "description": "Supply of complete documentation for energy certifications for heating and air conditioning systems."
+        },
+        "librettiFgas": {
+          "title": "FGAS booklets",
+          "description": "Compilation and supply of FGAS booklets. Ensures regulatory compliance of your system."
+        },
+        "librettiImpianto": {
+          "title": "System booklets",
+          "description": "A mandatory document that must be drawn up for all air conditioning systems."
+        },
+        "riscaldamento": {
+          "title": "Heating",
+          "description": "Accounting, reading and billing of heating costs. Monitor and efficiently manage your energy consumption."
+        },
+        "assistenzaTecnica": {
+          "title": "Technical assistance on existing systems",
+          "description": "Specialized technicians to resolve faults and problems on your systems. Restore their efficiency in a short time."
+        },
+        "diagnosiEnergetica": {
+          "title": "Energy diagnosis",
+          "description": "Detailed analysis of the energy performance of your system. Optimize the use of energy resources."
+        },
+        "terzoResponsabile": {
+          "title": "Third responsible role",
+          "description": "Management and control of systems by a qualified technical manager, in full compliance with current regulations."
+        },
+        "centroAssistenza": {
+          "title": "Authorized service center",
+          "description": "Authorized service center for trusted brands. Rely on us for certified maintenance and repairs."
+        },
+        "venditaRicambi": {
+          "title": "Spare parts sales",
+          "description": "Sale of authorized and original spare parts for Clivet, Lennox, Robur, Tecnair Lv, Viesman brands."
+        }
+      }
+    }
+  },
+
+  "assistenzaClivet": {
+    "hero": {
+      "title": "Clivet Support"
+    },
+    "section": {
+      "title": "Authorized Clivet systems support",
+      "description1": "To receive assistance on Clivet products in Italy, contact our authorized service center.",
+      "description2": "For repairs of products both under and out of warranty, we specialize in the maintenance and assistance of air conditioning products for the industrial, tertiary and residential sectors.",
+      "description3": "We offer a range of services to guarantee all the functions and advantages of your units for their entire life. Fast and professional interventions to ensure the proper functioning of the unit over time.",
+      "vrf": {
+        "title": "VRF systems and plants",
+        "primoAvviamento": "First start-up",
+        "diagnosiSistema": "System diagnostics",
+        "manutenzioneOrdinaria": "Routine maintenance",
+        "manutenzioneStaordinaria": "Extraordinary maintenance",
+        "controlloEfficienza": "Efficiency check"
+      },
+      "manutenzioneOrdinaria": {
+        "title": "Routine maintenance of Clivet heat pumps",
+        "valoriTermodinamici": "Thermodynamic values check",
+        "assorbimentiElettrici": "Electrical absorption check",
+        "resoImpianto": "System performance check",
+        "perditeGas": "Refrigerant gas leak check"
+      },
+      "manutenzioneStaordinaria": {
+        "title": "Extraordinary maintenance of Clivet heat pumps",
+        "ricercaGuasti": "Fault finding",
+        "riparazioni": "Repairs",
+        "diagnosiComputerizzata": "Computerized diagnostics"
+      },
+      "vendita": {
+        "title": "Spare parts sales",
+        "ricambiOriginali": "Sale of authorized and original spare parts"
+      }
+    },
+    "startup": {
+      "title": "Start-up and system commissioning with warranty",
+      "subtitle": "Specialized technicians for Clivet Systems",
+      "description": "Our staff is available for system start-up and commissioning with warranty validation, according to the manufacturer's instructions. Thanks to the considerable experience gained in the sector and a constantly updated technical staff, V.Services is the ideal partner for resolving any kind of unexpected event or failure on the systems of the brands it partners with."
+    }
+  },
+
+  "impianti": {
+    "riscaldamento": {
+      "progettazione": {
+        "hero": {
+          "title": "Design and Installation",
+          "subtitle": "Heating Systems"
+        },
+        "section1": {
+          "title": "Design and installation of heating systems",
+          "description1": "Specialized in the design and installation of new heating systems, we are experts in providing customized solutions for businesses, offices, condominiums, warehouses, hospitals, industries and residential solutions. Our process begins with a preliminary phase of analysis and evaluation of alternatives, carried out by specialized technicians. This approach ensures that each client receives the most suitable proposal for their environment.",
+          "description2": "Focused on the choice of state-of-the-art equipment, we offer systems that not only heat environments but also improve their quality. These systems are designed to recycle, filter and purify the air, as well as dehumidify it. In some cases, we offer solutions that combine these functions with heating the environment, thus ensuring optimal comfort and a healthy environment. Our dedication to innovation and quality ensures that every heating project is efficient, sustainable and perfectly in line with the specific needs of our clients."
+        },
+        "section2": {
+          "title": "Design and maintenance of custom thermal systems",
+          "description1": "Our specialization in the design and construction of thermal and heating systems positions us as leaders in the sector. We not only build systems, but also take care of their management and maintenance, providing valuable consultancy support. Every system we design is customized to meet the specific needs of our clients, built with an accurate method and finally certified to ensure maximum efficiency and safety. V.Service technicians are highly specialized in generator maintenance and have all the necessary requirements for the management, maintenance and installation of these systems.",
+          "description2": "This in-depth expertise ensures that every thermal and heating system is not only functional and efficient, but also in line with the highest regulatory standards. With V.Service, clients can expect high-quality thermal and heating solutions, customized for their specific needs."
+        }
+      },
+      "manutenzione": {
+        "hero": {
+          "title": "Maintenance and support",
+          "subtitle": "Heating Systems"
+        },
+        "section1": {
+          "title": "Professionals in thermal maintenance and support",
+          "description1": "We are here to ensure the correct functioning of your industrial and civil heating systems. Our team of expert technicians is available for repair interventions by appointment or emergency, providing reliable assistance.",
+          "description2": "Maintenance is essential to ensure lower energy consumption, compliance with current regulations and the longevity of your thermal system. Book a service now to optimize your system's performance. Assistance is our strong point when it comes to safe and efficient boilers. Choose the quality of the services offered by our specialists to ensure maximum performance from your system.",
+          "description3": "Our interventions comply with legal regulations and cover a wide range of clients, including commercial premises, management offices, industries and residential units. We are here to meet all your thermal maintenance and support needs."
+        },
+        "section2": {
+          "title": "Boiler maintenance",
+          "description1": "Boiler maintenance is regulated by DPR 412/93-551/93 and D.Lgs. 192/05-311/06 and subsequent amendments, which oblige the person responsible for the boiler to have periodic maintenance carried out by professionally qualified personnel. With V Services you will have the security of legally compliant maintenance: system labeling / flue gas analysis / mandatory attachment release / boiler cleaning. For your boiler, trust V Services. Discover our maintenance programs, our technicians will advise you best. Thanks to decades of experience and highly qualified staff, V Services is a leading company in boiler assistance and maintenance. With our services we are able to guarantee more safety, more savings and better performance. Our technicians will offer you prompt and qualified assistance at any time, helping your boiler to maintain high performance and better usage over time."
+        },
+        "cosaOffriamo": {
+          "title": "What we offer",
+          "rapidita": "Speed",
+          "copertura": "Territory coverage",
+          "personale": "Qualified staff",
+          "controlli": "Certified checks",
+          "checkup": "Check-Up"
+        }
+      }
+    },
+    "condizionamento": {
+      "progettazione": {
+        "hero": {
+          "title": "Design and installation",
+          "subtitle": "Air conditioning systems"
+        },
+        "section1": {
+          "title": "Discover our systems: guaranteed comfort and energy savings",
+          "description1": "Designing and installing a state-of-the-art air conditioning system is the best choice to make for the many advantages it brings, both in terms of improving the quality of life of those who occupy the space, and in terms of the resulting energy and economic savings. An air conditioning system allows you to regulate the internal temperature, whether it is very hot or cold, but not only that — in addition to returning an ideal and constant temperature in the environment in which it is installed, it allows you to maintain the right level of humidity.",
+          "description2": "In addition, modern air conditioning solutions perform an air purification action, which is filtered, thus significantly improving the liveability of the space. There are various system solutions for industry, warehouses, hospitals, offices, condominiums, businesses and also for the home. Our team of expert installers is able to design and install custom systems for condominiums, industry, warehouses, hospitals, large companies, laboratories, workshops, shops, offices and for private homes and individual residential units."
+        },
+        "section2": {
+          "title": "Experts in air conditioning",
+          "description1": "V.Services is the ideal choice for all those looking for refrigeration professionals specialized in the design and installation of air conditioning systems from the best brands. We are experts in providing air conditioning solutions for industrial and civil premises. With our experience and expertise, we guarantee a punctual and reliable service for the installation and repair of your air conditioners.",
+          "description2": "Whatever the space, we intervene to improve comfort and reduce energy consumption. Our qualified technicians are able to offer personalized consultancy, custom design and professional installation to guarantee maximum performance and customer satisfaction."
+        },
+        "section3": {
+          "title": "Custom solutions for industrial, commercial and civil environments",
+          "description1": "We offer complete design and installation services for air conditioning systems for every type of environment. From small homes to large industrial complexes, from shops to offices, from warehouses to healthcare facilities, we have the right solution for every air conditioning need.",
+          "description2": "Our twenty years of experience in the sector allows us to analyze the specific needs of each client and propose the most suitable system in terms of efficiency, consumption and costs. We use only products from the best brands and cutting-edge technologies to guarantee excellent and long-lasting performance over time."
+        }
+      },
+      "manutenzione": {
+        "hero": {
+          "title": "Maintenance and support",
+          "subtitle": "Air conditioning systems"
+        },
+        "section1": {
+          "title": "Custom solutions for industrial and civil environments",
+          "description1": "Your air conditioning system requires periodic maintenance to guarantee the best performance and avoid health risks. With our maintenance service you can always count on a team of expert and prepared professionals. It is important to always rely on qualified, certified and up-to-date technicians. Our clients: industries, warehouses, hospitals, commercial premises, management offices, shops, condominiums, and also residential units.",
+          "description2": "V.Services offers its clients specialized technical assistance services for air conditioning systems. Thanks to the considerable experience gained in the sector and a constantly updated technical staff, V.Services is the ideal partner for resolving any kind of unexpected event or failure on the systems of the brands it partners with. We operate offering a complete service for the maintenance of air conditioning and climate control systems of the best brands on the market.",
+          "description3": "Air conditioners are equated to heating systems and therefore, according to DM 20/6/2014, must be equipped with a system booklet and subjected to periodic efficiency checks every 4 years, if they have a power exceeding 10 kw for winter ones, and 12 kw for summer ones. These periodic maintenance and checks aim to ensure the safety and healthiness of the installed appliances."
+        },
+        "section2": {
+          "title": "A qualified and efficient team",
+          "description1": "Our technicians systematically attend refresher courses to guarantee an efficient and professional service and a high-quality preventive maintenance service for condominium air conditioning systems, also thanks to the state-of-the-art equipment available. We also carry out on-call technical interventions for fault restoration, i.e. extraordinary maintenance interventions at any time and promptly to restore systems to correct operation. We offer contracts for 24-hour assistance for the maintenance and resolution of sudden problems on the air conditioning and climate control system."
+        }
+      }
+    }
+  },
+
+  "preventivo": {
+    "hero": {
+      "title": "Request an Estimate",
+      "subtitle": "Fill in the form to request a personalized estimate"
+    }
+  },
+
+  "servicesGrid": {
+    "title": "Our Services",
+    "description": "We offer complete solutions for air conditioning and heating, with a team of specialized technicians always at your disposal.",
+    "items": {
+      "climatizzazione": {
+        "title": "Air Conditioning",
+        "description": "Installation and maintenance of air conditioning systems for civil and industrial environments."
+      },
+      "riscaldamento": {
+        "title": "Heating",
+        "description": "Complete heating solutions with condensing boilers and heat pumps."
+      },
+      "manutenzione": {
+        "title": "Maintenance",
+        "description": "Scheduled maintenance services to ensure efficiency and durability over time."
+      },
+      "assistenza24": {
+        "title": "24/7 Support",
+        "description": "Fast interventions and technical assistance available 24 hours a day, 7 days a week."
+      }
+    }
+  },
+
+  "newsArticles": {
+    "1": {
+      "title": "New heat pumps: top energy efficiency",
+      "excerpt": "The latest generations of heat pumps offer exceptional performance with reduced energy consumption.",
+      "content": "New heat pumps represent the future of domestic and industrial heating.",
+      "category": "Innovation"
+    },
+    "2": {
+      "title": "Spring maintenance: why it matters",
+      "excerpt": "Seasonal maintenance of your systems guarantees efficiency and durability over time.",
+      "content": "With the arrival of spring, it is the ideal time to carry out maintenance on your systems.",
+      "category": "Tips"
+    },
+    "3": {
+      "title": "2024 renovation bonus: how to take advantage",
+      "excerpt": "News on tax deductions for energy efficiency improvements of buildings.",
+      "content": "2024 brings important news regarding tax bonuses for building renovation.",
+      "category": "Taxation"
+    }
+  }
+}
