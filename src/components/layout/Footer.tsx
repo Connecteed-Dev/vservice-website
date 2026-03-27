@@ -22,7 +22,7 @@ export async function Footer() {
             <ul className="text-v-dark text-sm space-y-3">
               <li>P.IVA 05881731003</li>
               <li>URI: ROMA</li>
-              <li>REA 933501 Cap.Soc. 100,000€</li>
+              <li>REA 933501 Cap.Soc. 100.000€</li>
             </ul>
           </div>
 

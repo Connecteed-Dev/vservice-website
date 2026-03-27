@@ -17,14 +17,14 @@ export async function AziendaSection2() {
     {
       title: t('block1.title'),
       body: t('block1.body'),
-      imageSrc: "/azienda/aziendaRightimg.png",
+      imageSrc: "/azienda/aziendaRightimg.jpeg",
       imageAlt: "Impianti industriali",
       layout: "textLeftImageRight",
     },
     {
       title: t('block2.title'),
       body: t('block2.body'),
-      imageSrc: "/azienda/aziendaLeftimg.png",
+      imageSrc: "/azienda/aziendaLeftimg.jpeg",
       imageAlt: "Tecnico al lavoro su impianto",
       layout: "imageLeftTextRight",
     },

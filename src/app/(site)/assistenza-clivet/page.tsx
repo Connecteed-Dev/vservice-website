@@ -21,7 +21,7 @@ export default async function AssistenzaClivetPage() {
         title={t('startup.title')}
         subtitle={t('startup.subtitle')}
         description={t('startup.description')}
-        imageSrc="/assistenza-clivet/assistenzaclivet- rightImg.png"
+        imageSrc="/assistenza-clivet/assistenzaclivet-rightImg.jpeg"
         imageAlt="Assistenza Clivet"
       />
 

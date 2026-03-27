@@ -1,22 +1,20 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useLocale, useTranslations } from 'next-intl'
+import { useTranslations } from 'next-intl'
 import { useRouter, usePathname } from 'next/navigation'
 import { localeHref } from '@/lib/localeHref'
 
 export function Header() {
-  const locale = useLocale()
   const tNav = useTranslations('navigation')
-  const tHeader = useTranslations('header')
   const router = useRouter()
   const pathname = usePathname()
-  
+
   // Get current locale from URL as fallback for better reactivity
   const currentLocale = pathname.split('/')[1] === 'en' ? 'en' : 'it'
-  
+
   // Language switcher function
   const switchLanguage = (targetLocale: 'it' | 'en') => {
     const segments = pathname.split('/')
@@ -25,27 +23,6 @@ export function Header() {
     router.push(segments.join('/'))
   }
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isImpiantiOpen, setIsImpiantiOpen] = useState(false)
-  const [isMobileImpiantiOpen, setIsMobileImpiantiOpen] = useState(false)
-
-  // Click outside handler for Impianti dropdown
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as Element;
-      // Don't close if clicking inside the dropdown container
-      if (!target.closest('.impianti-dropdown-container')) {
-        setIsImpiantiOpen(false);
-      }
-    };
-
-    if (isImpiantiOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isImpiantiOpen]);
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -68,57 +45,9 @@ export function Header() {
               {tNav('azienda')}
             </Link>
             
-            {/* Impianti Dropdown */}
-            <div className="relative impianti-dropdown-container">
-              <button 
-                className="text-v-light hover:text-v-dark font-bold flex items-center space-x-1"
-                onClick={() => setIsImpiantiOpen(!isImpiantiOpen)}
-              >
-                <span>{tNav('impianti')}</span>
-                <svg className={`w-4 h-4 transform transition-transform duration-200 ${isImpiantiOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {isImpiantiOpen && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-[650px] h-[152px] bg-v-faded shadow-lg rounded-[20px] py-4 z-50"
-                  onMouseLeave={() => setIsImpiantiOpen(false)}
-                >
-                  <div className="flex h-full">
-                    {/* Left Column - Impianti di riscaldamento */}
-                    <div className="flex-1 border-r border-white/20 pr-4">
-                      <div className="px-4 py-2 font-bold text-v-light">
-                        {tHeader('impiantiRiscaldamento')}
-                      </div>
-                      <Link href={localeHref(currentLocale, '/impianti/riscaldamento/progettazione-e-installazione')} className="flex items-center justify-between px-4 py-2 text-sm text-v-light hover:text-v-dark hover:bg-white/50" onClick={() => setIsImpiantiOpen(false)}>
-                        <span>{tHeader('progettazioneInstallazione')}</span>
-                        <Image src="/icons/Icon-submenu.svg" alt="" width={6} height={12} />
-                      </Link>
-                      <Link href={localeHref(currentLocale, '/impianti/riscaldamento/manutenzione-e-assistenza')} className="flex items-center justify-between px-4 py-2 text-sm text-v-light hover:text-v-dark hover:bg-white/50" onClick={() => setIsImpiantiOpen(false)}>
-                        <span>{tHeader('manutenzioneAssistenza')}</span>
-                        <Image src="/icons/Icon-submenu.svg" alt="" width={6} height={12} />
-                      </Link>
-                    </div>
-                    
-                    {/* Right Column - Impianti di condizionamento */}
-                    <div className="flex-1 pl-4">
-                      <div className="px-4 py-2 font-bold text-v-light">
-                        {tHeader('impiantiCondizionamento')}
-                      </div>
-                      <Link href={localeHref(currentLocale, '/impianti/condizionamento/progettazione-e-installazione')} className="flex items-center justify-between px-4 py-2 text-sm text-v-light hover:text-v-dark hover:bg-white/50" onClick={() => setIsImpiantiOpen(false)}>
-                        <span>{tHeader('progettazioneInstallazione')}</span>
-                        <Image src="/icons/Icon-submenu.svg" alt="" width={6} height={12} />
-                      </Link>
-                      <Link href={localeHref(currentLocale, '/impianti/condizionamento/manutenzione-e-assistenza')} className="flex items-center justify-between px-4 py-2 text-sm text-v-light hover:text-v-dark hover:bg-white/50" onClick={() => setIsImpiantiOpen(false)}>
-                        <span>{tHeader('manutenzioneAssistenza')}</span>
-                        <Image src="/icons/Icon-submenu.svg" alt="" width={6} height={12} />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
+            <Link href={localeHref(currentLocale, '/impianti')} className="text-v-light hover:text-v-dark font-bold">
+              {tNav('impianti')}
+            </Link>
             
             <Link href={localeHref(currentLocale, '/assistenza-clivet')} className="text-v-light hover:text-v-dark font-bold">
               {tNav('assistenzaClivet')}
@@ -191,42 +120,9 @@ export function Header() {
                 {tNav('azienda')}
               </Link>
               
-              {/* Mobile Impianti Dropdown */}
-              <div>
-                <button
-                  onClick={() => setIsMobileImpiantiOpen(!isMobileImpiantiOpen)}
-                  className="flex items-center justify-between w-full text-v-light hover:text-v-dark font-bold py-2"
-                >
-                  <span>{tNav('impianti')}</span>
-                  <svg className={`w-4 h-4 transform transition-transform ${isMobileImpiantiOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                
-                {isMobileImpiantiOpen && (
-                  <div className="ml-4 mt-2 space-y-2">
-                    <div className="font-bold text-v-dark py-1">
-                      {tHeader('impiantiRiscaldamento')}
-                    </div>
-                    <Link href={localeHref(currentLocale, '/impianti/riscaldamento/progettazione-e-installazione')} className="block ml-4 py-1 text-sm text-v-light hover:text-v-dark">
-                      {tHeader('progettazioneInstallazione')}
-                    </Link>
-                    <Link href={localeHref(currentLocale, '/impianti/riscaldamento/manutenzione-e-assistenza')} className="block ml-4 py-1 text-sm text-v-light hover:text-v-dark">
-                      {tHeader('manutenzioneAssistenza')}
-                    </Link>
-                    
-                    <div className="font-bold text-v-dark py-1 pt-2">
-                      {tHeader('impiantiCondizionamento')}
-                    </div>
-                    <Link href={localeHref(currentLocale, '/impianti/condizionamento/progettazione-e-installazione')} className="block ml-4 py-1 text-sm text-v-light hover:text-v-dark">
-                      {tHeader('progettazioneInstallazione')}
-                    </Link>
-                    <Link href={localeHref(currentLocale, '/impianti/condizionamento/manutenzione-e-assistenza')} className="block ml-4 py-1 text-sm text-v-light hover:text-v-dark">
-                      {tHeader('manutenzioneAssistenza')}
-                    </Link>
-                  </div>
-                )}
-              </div>
+              <Link href={localeHref(currentLocale, '/impianti')} className="text-v-light hover:text-v-dark font-bold py-2">
+                {tNav('impianti')}
+              </Link>
               
               <Link href={localeHref(currentLocale, '/assistenza-clivet')} className="text-v-light hover:text-v-dark font-bold py-2">
                 {tNav('assistenzaClivet')}

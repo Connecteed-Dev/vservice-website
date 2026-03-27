@@ -156,7 +156,7 @@
     },
     "content": {
       "title": "Discover our achievements",
-      "description": "We want to show you our successes: installed systems, maintenance interventions and customized solutions that have improved the energy efficiency and comfort of our clients."
+      "description": "In our photo gallery, we invite you to explore a selection of our most recent works. Each image tells a story of commitment, expertise and success. Look at our achievements and see how we can turn your ideas into reality."
     }
   },
 
@@ -285,6 +285,12 @@
   },
 
   "impianti": {
+    "hero": {
+      "title": "Systems",
+      "subtitle": "Heating and air conditioning for residential and industrial environments",
+      "riscaldamento": "Heating Systems",
+      "condizionamento": "Air Conditioning Systems"
+    },
     "riscaldamento": {
       "progettazione": {
         "hero": {

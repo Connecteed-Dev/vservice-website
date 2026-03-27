@@ -151,13 +151,12 @@
 
   "gallery": {
     "hero": {
-      "title": "Gallery",
+      "title": "Galleria",
       "subtitle": "I nostri progetti e realizzazioni"
     },
     "content": {
       "title": "Scopri le nostre realizzazioni",
-      "description": "Vogliamo mostrarvi i nostri successi: impianti installati, interventi di manutenzione e soluzioni personalizzate che hanno migliorato l'efficienza energetica e il comfort dei nostri clienti."
-    }
+      "description": "Nella nostra galleria fotografica, ti invitiamo a esplorare una selezione dei nostri lavori più recenti. Ogni immagine racconta una storia di impegno, competenza e successo. Guarda le nostre realizzazioni e scopri come possiamo trasformare le tue idee in realtà."}
   },
 
   "blog": {
@@ -285,6 +284,12 @@
   },
 
   "impianti": {
+    "hero": {
+      "title": "Impianti",
+      "subtitle": "Riscaldamento e climatizzazione per ambienti civili e industriali",
+      "riscaldamento": "Impianti di Riscaldamento",
+      "condizionamento": "Impianti di Condizionamento"
+    },
     "riscaldamento": {
       "progettazione": {
         "hero": {
