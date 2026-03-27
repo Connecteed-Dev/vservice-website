@@ -10,10 +10,8 @@ export function CertificationsSection() {
   const t = useTranslations('homepage.certifications')
 
   const certificationLogos = [
-    { src: '/cert1.png', alt: 'Certification 1' },
-    { src: '/cert2.png', alt: 'Certification 2' },
-    { src: '/cert3.png', alt: 'Certification 3' },
-    { src: '/cert4.png', alt: 'Certification 4' },
+    { src: '/certification/25yCert.jpg', alt: '25 anni di esperienza' },
+    { src: '/certification/FgasCert.png', alt: 'Azienda certificata F-GAS' },
   ]
 
   const certifications = [
@@ -40,10 +38,10 @@ export function CertificationsSection() {
           </div>
 
           {/* Certification logos - 4 logos aligned horizontally */}
-          <div className="flex flex-wrap justify-center lg:justify-end gap-4 lg:gap-6">
+          <div className="flex flex-wrap justify-center lg:justify-end gap-6">
             {certificationLogos.map((logo, index) => (
-              <div key={index} className="w-20 h-20 lg:w-24 lg:h-24 bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
-                <img src={logo.src} alt={logo.alt} className="max-w-[60px] max-h-[60px] lg:max-w-[80px] lg:max-h-[80px] object-contain" />
+              <div key={index} className="w-28 h-28 bg-gray-50 rounded-xl flex items-center justify-center border border-gray-200 p-3">
+                <img src={logo.src} alt={logo.alt} className="max-w-full max-h-full object-contain" />
               </div>
             ))}
           </div>

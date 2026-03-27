@@ -3,6 +3,7 @@ import { CTAWide } from '@/components/sections/CTAWide'
 import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
 import { ServiziBackgroundCardSection } from '@/components/sections/impianti/ServiziBackgroundCardSection'
 import { ServiziSpecializzatiSection } from '@/components/sections/servizi/ServiziSpecializzatiSection'
+import { PartnerLogosSection } from '@/components/sections/servizi/PartnerLogosSection'
 
 export default async function ServiziPage() {
   const t = await getTranslations('servizi')
@@ -22,6 +23,7 @@ export default async function ServiziPage() {
         className="bg-white"
       />
       <ServiziSpecializzatiSection />
+      <PartnerLogosSection />
       <CTAWide />
     </>
   )
