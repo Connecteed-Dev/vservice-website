@@ -12,7 +12,7 @@
     "news": "News",
     "blog": "Blog",
     "gallery": "Gallery",
-    "assistenzaClivet": "Clivet Support",
+    "assistenzaClivet": "Support",
     "areaRiservata": "Reserved Area"
   },
 
@@ -243,11 +243,12 @@
 
   "assistenzaClivet": {
     "hero": {
-      "title": "Clivet Support"
+      "title": "Support",
+      "subtitle": "Authorized service center for air conditioning and heating systems"
     },
     "section": {
-      "title": "Authorized Clivet systems support",
-      "description1": "To receive assistance on Clivet products in Italy, contact our authorized service center.",
+      "title": "Authorized support",
+      "description1": "To receive support, contact our authorized service center.",
       "description2": "For repairs of products both under and out of warranty, we specialize in the maintenance and assistance of air conditioning products for the industrial, tertiary and residential sectors.",
       "description3": "We offer a range of services to guarantee all the functions and advantages of your units for their entire life. Fast and professional interventions to ensure the proper functioning of the unit over time.",
       "vrf": {
@@ -259,14 +260,14 @@
         "controlloEfficienza": "Efficiency check"
       },
       "manutenzioneOrdinaria": {
-        "title": "Routine maintenance of Clivet heat pumps",
+        "title": "Routine maintenance of heat pumps",
         "valoriTermodinamici": "Thermodynamic values check",
         "assorbimentiElettrici": "Electrical absorption check",
         "resoImpianto": "System performance check",
         "perditeGas": "Refrigerant gas leak check"
       },
       "manutenzioneStaordinaria": {
-        "title": "Extraordinary maintenance of Clivet heat pumps",
+        "title": "Extraordinary maintenance of heat pumps",
         "ricercaGuasti": "Fault finding",
         "riparazioni": "Repairs",
         "diagnosiComputerizzata": "Computerized diagnostics"
@@ -278,7 +279,7 @@
     },
     "startup": {
       "title": "Start-up and system commissioning with warranty",
-      "subtitle": "Specialized technicians for Clivet Systems",
+      "subtitle": "Specialized technicians",
       "description": "Our staff is available for system start-up and commissioning with warranty validation, according to the manufacturer's instructions. Thanks to the considerable experience gained in the sector and a constantly updated technical staff, V.Services is the ideal partner for resolving any kind of unexpected event or failure on the systems of the brands it partners with."
     }
   },

@@ -12,7 +12,7 @@
     "news": "News",
     "blog": "Blog",
     "gallery": "Galleria",
-    "assistenzaClivet": "Assistenza Clivet",
+    "assistenzaClivet": "Assistenza",
     "areaRiservata": "Area Riservata"
   },
 
@@ -243,11 +243,12 @@
 
   "assistenzaClivet": {
     "hero": {
-      "title": "Assistenza Clivet"
+      "title": "Assistenza",
+      "subtitle": "Centro assistenza autorizzato per impianti di climatizzazione e riscaldamento"
     },
     "section": {
-      "title": "Assistenza autorizzata di sistemi Clivet",
-      "description1": "Per ricevere assistenza sui prodotti Clivet in Italia, contatta il nostro centro assistenza autorizzato.",
+      "title": "Assistenza autorizzata",
+      "description1": "Per ricevere assistenza, contatta il nostro centro assistenza autorizzato.",
       "description2": "Per riparazioni di prodotti sia in garanzia che fuori garanzia, siamo specializzati nella manutenzione e nell'assistenza dei prodotti di climatizzazione per il settore industriale, terziario che per il settore residenziale.",
       "description3": "Offriamo una serie di servizi per garantire tutte le funzionalità e i vantaggi delle vostre unità per tutta la durata della loro vita. Interventi rapidi e professionali per assicurare il buon funzionamento nel tempo dell'unità.",
       "vrf": {
@@ -259,14 +260,14 @@
         "controlloEfficienza": "Controllo efficienza"
       },
       "manutenzioneOrdinaria": {
-        "title": "Manutenzione ordinaria pompe di calore Clivet",
+        "title": "Manutenzione ordinaria pompe di calore",
         "valoriTermodinamici": "Controllo valori termodinamici",
         "assorbimentiElettrici": "Verifica assorbimenti elettrici",
         "resoImpianto": "Verifica reso impianto",
         "perditeGas": "Controllo perdite gas refrigerante"
       },
       "manutenzioneStaordinaria": {
-        "title": "Manutenzione straordinaria pompe di calore Clivet",
+        "title": "Manutenzione straordinaria pompe di calore",
         "ricercaGuasti": "Ricerca guasti",
         "riparazioni": "Riparazioni",
         "diagnosiComputerizzata": "Diagnosi computerizzata"
@@ -278,7 +279,7 @@
     },
     "startup": {
       "title": "Start-up e messa a punto impianti con garanzia",
-      "subtitle": "Tecnici specializzati per Sistemi Clivet",
+      "subtitle": "Tecnici specializzati",
       "description": "Il nostro staff è a disposizione per start-up e messa a punto impianti con convalida della garanzia, secondo le indicazioni della casa madre. Grazie alla notevole esperienza maturata nel settore e ad uno staff tecnico costantemente aggiornato, V.Services è l'interlocutore ideale per la risoluzione di qualunque genere di imprevisto o guasto agli impianti dei marchi di cui è partner."
     }
   },

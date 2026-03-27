@@ -11,6 +11,7 @@ export default async function AssistenzaClivetPage() {
     <>
       <HeroPageTitle
         title={t('hero.title')}
+        subtitle={t('hero.subtitle')}
         backgroundImage="/hero/herobg-assistenzaClivet.png"
       />
 
