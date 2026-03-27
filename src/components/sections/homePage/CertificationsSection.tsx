@@ -10,8 +10,8 @@ export function CertificationsSection() {
   const t = useTranslations('homepage.certifications')
 
   const certificationLogos = [
-    { src: '/certification/25yCert.jpg', alt: '25 anni di esperienza' },
-    { src: '/certification/FgasCert.png', alt: 'Azienda certificata F-GAS' },
+    { src: '/Certification/25yCert.jpg', alt: '25 anni di esperienza' },
+    { src: '/Certification/FgasCert.png', alt: 'Azienda certificata F-GAS' },
   ]
 
   const certifications = [
