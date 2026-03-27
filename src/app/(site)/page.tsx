@@ -21,7 +21,7 @@ export default async function HomePage() {
       <TwentyYearsSection />
 
       {/* Spacer bianco per "staccare" dal blocco dopo (come in Figma) */}
-      <div className="h-20 bg-v-white" />
+      <div className="h-8 bg-v-white" />
 
       {/* QuoteServices ha il suo bg-v-faded, NON wrappare dentro bg-v-white */}
       <QuoteServicesSection />

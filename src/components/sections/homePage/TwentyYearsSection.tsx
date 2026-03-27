@@ -11,15 +11,15 @@ export function TwentyYearsSection() {
 
   return (
     <section className="relative z-20 -mt-16 md:-mt-20 lg:-mt-24 pb-16 md:pb-20 lg:pb-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="bg-v-dark rounded-2xl shadow-2xl p-8 md:p-10 lg:p-12 w-full flex flex-col justify-center">
+      <div className="mx-auto px-4 max-w-[1440px]">
+        <div className="bg-v-dark rounded-2xl shadow-2xl p-10 md:p-14 lg:p-16 w-full flex flex-col justify-center">
           <p className="text-xs font-bold tracking-widest uppercase text-white/90 mb-3">
             V.SERVICE
           </p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-snug">
             {t('title')}
           </h2>
-          <div className="text-white/90 space-y-4 max-w-3xl mb-10">
+          <div className="text-white/90 space-y-4 mb-10">
             <p>{t('description1')}</p>
             <p>{t('description2')}</p>
           </div>
