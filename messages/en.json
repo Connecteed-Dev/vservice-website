@@ -87,7 +87,7 @@
       "scopriDiPiu": "Discover More"
     },
     "newsStrip": {
-      "title": "Latest News",
+      "title": "News & Updates",
       "vediTutte": "View All"
     }
   },
@@ -138,8 +138,8 @@
 
   "news": {
     "hero": {
-      "title": "News",
-      "subtitle": "The latest news from the sector"
+      "title": "News & Updates",
+      "subtitle": "The latest news from the sector, updated twice a year"
     },
     "article": {
       "heroTitle": "Article",

@@ -87,7 +87,7 @@
       "scopriDiPiu": "Scopri di più"
     },
     "newsStrip": {
-      "title": "Ultime news",
+      "title": "Novità & Aggiornamenti",
       "vediTutte": "Vedi tutte"
     }
   },
@@ -138,8 +138,8 @@
 
   "news": {
     "hero": {
-      "title": "News",
-      "subtitle": "Le ultime novità dal settore"
+      "title": "Novità & Aggiornamenti",
+      "subtitle": "Le ultime novità dal settore, con aggiornamenti semestrali"
     },
     "article": {
       "heroTitle": "Articolo",

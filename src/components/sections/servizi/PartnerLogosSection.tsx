@@ -2,12 +2,12 @@ import Image from 'next/image'
 import { Container } from '@/components/layout/Container'
 
 const logos = [
-  { src: '/logoPart/clivet logo.png',     alt: 'Clivet',     href: '#' },
-  { src: '/logoPart/robur logo.png',       alt: 'Robur',      href: '#' },
-  { src: '/logoPart/viessmann logo.png',   alt: 'Viessmann',  href: '#' },
-  { src: '/logoPart/hoval logo.png',       alt: 'Hoval',      href: '#' },
-  { src: '/logoPart/TECNAIR logo.jpg',     alt: 'Tecnair',    href: '#' },
-  { src: '/logoPart/maxa logo.jpg',        alt: 'Maxa',       href: '#' },
+  { src: '/logoPart/clivet logo.png',     alt: 'Clivet',     href: 'https://www.clivet.com/' },
+  { src: '/logoPart/robur logo.png',       alt: 'Robur',      href: 'https://www.robur.com/it/' },
+  { src: '/logoPart/viessmann logo.png',   alt: 'Viessmann',  href: 'https://www.viessmann.it/' },
+  { src: '/logoPart/hoval logo.png',       alt: 'Hoval',      href: 'https://www.hoval.it/it_IT/' },
+  { src: '/logoPart/TECNAIR logo.jpg',     alt: 'Tecnair',    href: 'https://www.tecnair.com/IT_it/' },
+  { src: '/logoPart/maxa logo.jpg',        alt: 'Maxa',       href: 'https://www.maxa.it/index.php?lang=it&mode=home' },
 ]
 
 export function PartnerLogosSection() {
@@ -19,6 +19,8 @@ export function PartnerLogosSection() {
             <a
               key={logo.alt}
               href={logo.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-200 grayscale hover:grayscale-0"
               aria-label={logo.alt}
             >

@@ -12,6 +12,7 @@ export function CertificationsSection() {
   const certificationLogos = [
     { src: '/Certification/25yCert.jpg', alt: '25 anni di esperienza' },
     { src: '/Certification/FgasCert.png', alt: 'Azienda certificata F-GAS' },
+    { src: '/Certification/CertEnergetica.png', alt: 'Certificazioni Energetiche' },
   ]
 
   const certifications = [
