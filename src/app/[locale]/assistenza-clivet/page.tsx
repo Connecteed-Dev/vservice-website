@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Centro Assistenza Clivet Roma | V.Service — Service Center Autorizzato'
-      : 'Clivet Service Center Rome | V.Service — Authorized Support Center',
+      ? 'Centro Assistenza Clivet Roma | V.Service - Service Center Autorizzato'
+      : 'Clivet Service Center Rome | V.Service - Authorized Support Center',
     description: isIT
       ? 'V.Service è centro assistenza autorizzato Clivet a Roma e nel Lazio. Riparazione, manutenzione e ricambi originali per climatizzatori e pompe di calore Clivet.'
       : 'V.Service is an authorized Clivet service center in Rome and Lazio. Repair, maintenance and original spare parts for Clivet air conditioners and heat pumps.',

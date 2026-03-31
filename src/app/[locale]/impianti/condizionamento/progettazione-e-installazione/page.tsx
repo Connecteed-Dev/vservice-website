@@ -9,8 +9,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const path = 'impianti/condizionamento/progettazione-e-installazione'
   return {
     title: isIT
-      ? 'Installazione Climatizzatori Roma | V.Service — Progettazione Impianti'
-      : 'AC Installation Rome | V.Service — System Design & Installation',
+      ? 'Installazione Climatizzatori Roma | V.Service - Progettazione Impianti'
+      : 'AC Installation Rome | V.Service - System Design & Installation',
     description: isIT
       ? 'V.Service progetta e installa impianti di climatizzazione su misura a Roma e nel Lazio. Sistemi split, VRF e canalizzati per civile e industriale. Preventivo gratuito.'
       : 'V.Service designs and installs custom air conditioning systems in Rome and Lazio. Split, VRF and ducted systems for residential and industrial use. Free quote.',

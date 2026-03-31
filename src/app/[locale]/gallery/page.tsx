@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Galleria Lavori | V.Service — Impianti Realizzati a Roma e Lazio'
-      : 'Project Gallery | V.Service — Completed Installations in Rome & Lazio',
+      ? 'Galleria Lavori | V.Service - Impianti Realizzati a Roma e Lazio'
+      : 'Project Gallery | V.Service - Completed Installations in Rome & Lazio',
     description: isIT
       ? 'Sfoglia la galleria dei lavori realizzati da V.Service: installazioni di climatizzatori, impianti di riscaldamento e pompe di calore per clienti civili e industriali nel Lazio.'
       : 'Browse V.Service\'s project gallery: air conditioning, heating and heat pump installations for residential and industrial clients across Lazio.',

@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Novità & Aggiornamenti | V.Service — News sul Settore Termico'
-      : 'News & Updates | V.Service — HVAC Industry Updates',
+      ? 'Novità & Aggiornamenti | V.Service - News sul Settore Termico'
+      : 'News & Updates | V.Service - HVAC Industry Updates',
     description: isIT
       ? 'Rimani aggiornato con le ultime novità di V.Service: risparmio energetico, nuove tecnologie per pompe di calore, climatizzazione e riscaldamento a Roma e Lazio.'
       : 'Stay up to date with the latest from V.Service: energy saving tips, new heat pump technologies, and HVAC news for Rome and the Lazio region.',

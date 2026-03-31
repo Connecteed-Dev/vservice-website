@@ -48,7 +48,7 @@ export async function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Image src="/drafts.svg" alt="Email" width={16} height={16} />
-                <span>{t('email')}</span>
+                <a href="mailto:info@vservice.it" className="hover:underline">{t('email')}</a>
               </li>
             </ul>
           </div>

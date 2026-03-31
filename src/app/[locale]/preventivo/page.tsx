@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Richiedi un Preventivo | V.Service — Climatizzazione e Riscaldamento Roma'
-      : 'Request a Quote | V.Service — Air Conditioning & Heating Rome',
+      ? 'Richiedi un Preventivo | V.Service - Climatizzazione e Riscaldamento Roma'
+      : 'Request a Quote | V.Service - Air Conditioning & Heating Rome',
     description: isIT
       ? 'Richiedi un preventivo gratuito per l\'installazione o manutenzione di impianti di climatizzazione, riscaldamento e pompe di calore a Roma e nel Lazio. Risposta rapida garantita.'
       : 'Request a free quote for installation or maintenance of air conditioning, heating and heat pump systems in Rome and Lazio. Fast response guaranteed.',

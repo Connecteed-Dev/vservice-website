@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Blog | V.Service — Consigli su Risparmio Energetico e Impianti Termici'
-      : 'Blog | V.Service — Energy Saving Tips & HVAC Advice',
+      ? 'Blog | V.Service - Consigli su Risparmio Energetico e Impianti Termici'
+      : 'Blog | V.Service - Energy Saving Tips & HVAC Advice',
     description: isIT
       ? 'Consigli pratici, guide tecniche e aggiornamenti normativi su climatizzazione, riscaldamento e risparmio energetico dal team di V.Service a Roma.'
       : 'Practical tips, technical guides and regulatory updates on air conditioning, heating and energy saving from the V.Service team in Rome.',

@@ -9,8 +9,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const path = 'impianti/riscaldamento/manutenzione-e-assistenza'
   return {
     title: isIT
-      ? 'Manutenzione Riscaldamento Roma | V.Service — Assistenza Caldaie e Pompe di Calore'
-      : 'Heating Maintenance Rome | V.Service — Boiler & Heat Pump Support',
+      ? 'Manutenzione Riscaldamento Roma | V.Service - Assistenza Caldaie e Pompe di Calore'
+      : 'Heating Maintenance Rome | V.Service - Boiler & Heat Pump Support',
     description: isIT
       ? 'Manutenzione e assistenza tecnica per impianti di riscaldamento a Roma e nel Lazio. Interventi su caldaie a condensazione, pompe di calore e impianti termici industriali.'
       : 'Heating system maintenance and support in Rome and Lazio. Service for condensing boilers, heat pumps and industrial thermal systems.',

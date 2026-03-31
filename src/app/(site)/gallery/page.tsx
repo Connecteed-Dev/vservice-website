@@ -36,7 +36,7 @@ export default async function GalleryPage() {
         </Container>
       </section>
 
-      {/* Gallery grid — dark card with rounded corners like Figma */}
+      {/* Gallery grid - dark card with rounded corners like Figma */}
       <section className="bg-v-faded py-12 md:py-16">
         <Container>
           <div className="bg-v-dark rounded-[20px] p-8 md:p-12">

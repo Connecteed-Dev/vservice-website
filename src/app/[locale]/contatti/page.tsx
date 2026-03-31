@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Contatti | V.Service — Richiedi Assistenza o Informazioni a Roma'
-      : 'Contact Us | V.Service — Get Support or Information in Rome',
+      ? 'Contatti | V.Service - Richiedi Assistenza o Informazioni a Roma'
+      : 'Contact Us | V.Service - Get Support or Information in Rome',
     description: isIT
       ? 'Contatta V.Service per informazioni sui nostri impianti di climatizzazione e riscaldamento a Roma. Sede operativa in Via dei Quintili 55b. Disponibili dal lunedì al venerdì.'
       : 'Contact V.Service for information on our air conditioning and heating systems in Rome. We are available Monday to Friday at Via dei Quintili 55b.',

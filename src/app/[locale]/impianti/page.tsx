@@ -8,8 +8,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const isIT = locale === 'it'
   return {
     title: isIT
-      ? 'Impianti | Condizionamento e Riscaldamento a Roma — V.Service'
-      : 'Systems | Air Conditioning & Heating in Rome — V.Service',
+      ? 'Impianti | Condizionamento e Riscaldamento a Roma - V.Service'
+      : 'Systems | Air Conditioning & Heating in Rome - V.Service',
     description: isIT
       ? 'V.Service progetta e installa impianti di climatizzazione e riscaldamento a Roma e nel Lazio. Soluzioni per abitazioni, uffici, capannoni e ambienti industriali.'
       : 'V.Service designs and installs air conditioning and heating systems in Rome and Lazio. Solutions for homes, offices, warehouses and industrial facilities.',

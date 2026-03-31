@@ -9,8 +9,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const path = 'impianti/condizionamento/manutenzione-e-assistenza'
   return {
     title: isIT
-      ? 'Manutenzione Condizionatori Roma | V.Service — Assistenza Tecnica'
-      : 'AC Maintenance Rome | V.Service — Technical Support',
+      ? 'Manutenzione Condizionatori Roma | V.Service - Assistenza Tecnica'
+      : 'AC Maintenance Rome | V.Service - Technical Support',
     description: isIT
       ? 'Servizio di manutenzione e assistenza tecnica per impianti di climatizzazione a Roma e nel Lazio. Interventi rapidi, tecnici certificati F-GAS e contratti di manutenzione programmata.'
       : 'Air conditioning maintenance and technical support in Rome and Lazio. Fast response, F-GAS certified technicians and scheduled maintenance contracts.',

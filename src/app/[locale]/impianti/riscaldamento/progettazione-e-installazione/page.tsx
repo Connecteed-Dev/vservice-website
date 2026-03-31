@@ -9,8 +9,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const path = 'impianti/riscaldamento/progettazione-e-installazione'
   return {
     title: isIT
-      ? 'Installazione Riscaldamento Roma | V.Service — Caldaie e Pompe di Calore'
-      : 'Heating Installation Rome | V.Service — Boilers & Heat Pumps',
+      ? 'Installazione Riscaldamento Roma | V.Service - Caldaie e Pompe di Calore'
+      : 'Heating Installation Rome | V.Service - Boilers & Heat Pumps',
     description: isIT
       ? 'V.Service installa impianti di riscaldamento a Roma e nel Lazio: caldaie a condensazione, pompe di calore aria-acqua e impianti radianti. Progettazione su misura e preventivo gratuito.'
       : 'V.Service installs heating systems in Rome and Lazio: condensing boilers, air-to-water heat pumps and radiant systems. Custom design and free quote.',
