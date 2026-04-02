@@ -17,7 +17,7 @@ export function PartnerLogosSection() {
   return (
     <section className="bg-v-faded py-8">
       <Container>
-        <div className="bg-white rounded-[20px] border border-v-border px-10 py-10 flex flex-wrap items-center justify-center gap-10 lg:gap-16">
+        <div className="bg-white rounded-[20px] border border-v-border px-8 py-10 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-wrap lg:items-center lg:justify-center gap-8 lg:gap-16 place-items-center">
           {logos.map((logo) => (
             <a
               key={logo.alt}
