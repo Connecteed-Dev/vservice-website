@@ -20,6 +20,17 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.vservice.it'
 export const metadata: Metadata = {
   title: "V.Service - Climatizzazione e Riscaldamento",
   description: "Leader in climatizzazione e riscaldamento con 20 anni di esperienza",
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon1.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png' },
+    ],
+    shortcut: '/favicon.ico',
+  },
   alternates: {
     canonical: SITE_URL,
     languages: {
@@ -33,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'V.Service',
     title: 'V.Service - Impianti Termici e Climatizzazione Roma',
     description: 'Installazione e manutenzione di impianti di riscaldamento e aria condizionata a Roma e Lazio.',
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1440, height: 632, alt: 'V.Service - Climatizzazione e Riscaldamento Roma' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'V.Service - Climatizzazione e Riscaldamento Roma' }],
   },
   twitter: {
     card: 'summary_large_image',

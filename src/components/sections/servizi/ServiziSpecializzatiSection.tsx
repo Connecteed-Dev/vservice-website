@@ -38,12 +38,12 @@ export async function ServiziSpecializzatiSection() {
             </p>
           </div>
 
-          <div className="mt-10 md:mt-[60px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="mt-10 md:mt-[60px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {items.map((item) => (
               <div key={item.key} className="relative">
                 <ClippedBox
                   variant="serviziSmallCardCut"
-                  className="w-[212.8px] h-[340px]"
+                  className="w-full min-h-[260px] sm:min-h-[300px] lg:h-[340px]"
                   innerClassName="h-full w-full overflow-hidden rounded-[20px]"
                 >
                   <div className="bg-v-dark text-white h-full px-5 pt-6 pb-6 flex flex-col">

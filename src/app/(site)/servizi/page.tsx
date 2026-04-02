@@ -6,7 +6,7 @@ import { ServiziSpecializzatiSection } from '@/components/sections/servizi/Servi
 import { PartnerLogosSection } from '@/components/sections/servizi/PartnerLogosSection'
 
 export default async function ServiziPage() {
-  const t = await getTranslations('servizi')
+  const t = await getTranslations('servizi') // This locks t to the servizi namespace inside the JSON file. So when call t('hero.title'), it resolves to: messages/it.json → servizi → hero → title
 
   return (
     <>

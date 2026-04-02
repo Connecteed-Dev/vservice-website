@@ -50,7 +50,7 @@ export async function AssistenzaClivetSection() {
               {/* Card 3: Manutenzione straordinaria */}
               <div className="bg-v-dark text-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">{t('manutenzioneStaordinaria.title')}</h3>
-                <div className="flex gap-x-6">
+                <div className="flex flex-wrap gap-x-6 gap-y-2">
                   <ChecklistItem text={t('manutenzioneStaordinaria.ricercaGuasti')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
                   <ChecklistItem text={t('manutenzioneStaordinaria.riparazioni')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
                   <ChecklistItem text={t('manutenzioneStaordinaria.diagnosiComputerizzata')} isWhite={true} iconSrc="/assistenza-clivet/Icon-check.svg" />
