@@ -27,7 +27,7 @@
     "contactsTitle": "Contacts",
     "followUsTitle": "Follow Us",
     "operativeAddress": "Operative address: Via dei Quintili 55b, Rome",
-    "legalAddress": "Legal address: Via dei Juverci n°28",
+    "legalAddress": "Legal address: Via dei Juvenci n°28",
     "tel": "Tel: 06 7610790",
     "cell": "Cell: 06 76967940",
     "email": "Email: info@vservice.it",
@@ -103,7 +103,7 @@
     },
     "block2": {
       "title": "An authorized service center",
-      "body": "V.Service, an authorized service center for prestigious brands such as Clivet, M.T.A, Tecnair, Robur Lennox, stands out in the conditioning and heating sector. Offering not only assistance but also a spare parts sales service for these brands, V.Service effectively meets its clients' needs. The company, boasting important certifications such as ISO 9001-15 and specializations in handling refrigerant gases, positions itself as a leader in its sector."
+      "body": "V.Service, an authorized service center for prestigious brands such as Clivet, Robur, Viessmann, Hoval, Tecnair and Maxa, stands out in the conditioning and heating sector. Offering not only assistance but also a spare parts sales service for these brands, V.Service effectively meets its clients' needs. The company, boasting important certifications such as ISO 9001-15 and specializations in handling refrigerant gases, positions itself as a leader in its sector."
     }
   },
 
@@ -119,7 +119,7 @@
       "telefonoLabel": "Phone",
       "orariLabel": "Hours",
       "sedeOperativa": "Operative address: Via dei Quintili 55b, Rome",
-      "sedeLegale": "Legal address: Via dei Juvencin n°28",
+      "sedeLegale": "Legal address: Via dei Juvenci n°28",
       "orariDays": "Monday to Friday",
       "orariMorning": "8:00 - 13:00",
       "orariAfternoon": "14:00 - 17:00",
@@ -235,7 +235,7 @@
         },
         "venditaRicambi": {
           "title": "Spare parts sales",
-          "description": "Sale of authorized and original spare parts for Clivet, Lennox, Robur, Tecnair Lv, Viesman brands."
+          "description": "Sale of authorized and original spare parts for Clivet, Robur, Viessmann, Hoval, Tecnair and Maxa brands."
         }
       }
     }

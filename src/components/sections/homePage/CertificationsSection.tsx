@@ -12,13 +12,13 @@ export function CertificationsSection() {
   const certificationLogos = [
     { src: '/Certification/25yCert.jpg', alt: '25 anni di esperienza' },
     { src: '/Certification/FgasCert.png', alt: 'Azienda certificata F-GAS' },
-    { src: '/Certification/CertEnergetica.png', alt: 'Certificazioni Energetiche' },
+    // { src: '/Certification/CertEnergetica.png', alt: 'Certificazioni Energetiche' }, // hidden per client request
   ]
 
   const certifications = [
     { title: t('cert1Title'), description: t('description1') },
     { title: t('cert2Title'), description: t('description2') },
-    { title: t('cert3Title'), description: t('description3') },
+    // { title: t('cert3Title'), description: t('description3') }, // hidden per client request
   ]
 
   return (

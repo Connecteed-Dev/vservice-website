@@ -27,7 +27,7 @@
     "contactsTitle": "Contatti",
     "followUsTitle": "Seguici",
     "operativeAddress": "Sede operativa via dei Quintili 55b, Roma",
-    "legalAddress": "Sede legale via dei Juverci n°28",
+    "legalAddress": "Sede legale via dei Juvenci n°28",
     "tel": "Tel: 06 7610790",
     "cell": "Cell: 06 76967940",
     "email": "Email: info@vservice.it",
@@ -103,7 +103,7 @@
     },
     "block2": {
       "title": "Un centro assistenza autorizzato",
-      "body": "V.Service, un centro assistenza autorizzato per marchi di prestigio come Clivet, M.T.A, Tecnair, Robur Lennox, si distingue nel settore del condizionamento e riscaldamento. Offrendo non solo assistenza ma anche un servizio di vendita di ricambi per questi marchi, V.Service risponde efficacemente alle esigenze dei suoi clienti. La società, vantando certificazioni importanti come la ISO 9001-15 e specializzazioni nella movimentazione dei gas refrigeranti, si pone come leader nel suo settore."
+      "body": "V.Service, un centro assistenza autorizzato per marchi di prestigio come Clivet, Robur, Viessmann, Hoval, Tecnair e Maxa, si distingue nel settore del condizionamento e riscaldamento. Offrendo non solo assistenza ma anche un servizio di vendita di ricambi per questi marchi, V.Service risponde efficacemente alle esigenze dei suoi clienti. La società, vantando certificazioni importanti come la ISO 9001-15 e specializzazioni nella movimentazione dei gas refrigeranti, si pone come leader nel suo settore."
     }
   },
 
@@ -119,7 +119,7 @@
       "telefonoLabel": "Telefono",
       "orariLabel": "Orari",
       "sedeOperativa": "Sede operativa via dei Quintili 55b, Roma",
-      "sedeLegale": "Sede legale via dei Juvencin n°28",
+      "sedeLegale": "Sede legale via dei Juvenci n°28",
       "orariDays": "Dal lunedì al venerdì",
       "orariMorning": "8.00 - 13.00",
       "orariAfternoon": "14.00 - 17.00",
@@ -234,7 +234,7 @@
         },
         "venditaRicambi": {
           "title": "Vendita ricambi",
-          "description": "Vendita ricambi autorizzati e originali dei marchi Clivet, Lennox, Robur, Tecnair Lv, Viesman."
+          "description": "Vendita ricambi autorizzati e originali dei marchi Clivet, Robur, Viessmann, Hoval, Tecnair e Maxa."
         }
       }
     }

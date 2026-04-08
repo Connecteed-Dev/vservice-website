@@ -66,12 +66,14 @@ export function NewsStripSection({ items = homeNews }: NewsStripSectionProps) {
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-2xl md:text-3xl font-semibold text-white">{t('title')}</h2>
+          {/* "Vedi tutte" hidden per client request — news section not yet populated
           <Link
             href={localeHref(locale, '/news')}
             className="inline-flex items-center justify-center rounded-full border border-white/40 px-5 py-2 text-sm font-medium text-white hover:bg-white hover:text-v-dark transition"
           >
             {t('vediTutte')}
           </Link>
+          */}
         </div>
 
         {/* Grid layout for cards */}

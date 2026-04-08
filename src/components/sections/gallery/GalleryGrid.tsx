@@ -38,76 +38,26 @@ export function GalleryGrid({ images }: GalleryGridProps) {
   return (
     <>
       {/* ── Grid ── */}
-      <div className="grid grid-cols-10 gap-3 md:gap-4">
-        {/* Row 1: large left + small right */}
-        <button
-          onClick={() => open(0)}
-          className="col-span-10 md:col-span-7 h-[280px] md:h-[400px] relative overflow-hidden rounded-2xl group focus:outline-none"
-        >
-          <Image
-            src={images[0].src}
-            alt={images[0].alt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 70vw"
-          />
-          <div className="absolute inset-0 bg-v-dark/0 group-hover:bg-v-dark/20 transition-colors duration-300 rounded-2xl" />
-          <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <ZoomIcon />
-          </span>
-        </button>
-
-        <button
-          onClick={() => open(1)}
-          className="col-span-10 md:col-span-3 h-[240px] md:h-[400px] relative overflow-hidden rounded-2xl group focus:outline-none"
-        >
-          <Image
-            src={images[1].src}
-            alt={images[1].alt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 30vw"
-          />
-          <div className="absolute inset-0 bg-v-dark/0 group-hover:bg-v-dark/20 transition-colors duration-300 rounded-2xl" />
-          <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <ZoomIcon />
-          </span>
-        </button>
-
-        {/* Row 2: small left + large right */}
-        <button
-          onClick={() => open(2)}
-          className="col-span-10 md:col-span-3 h-[240px] md:h-[360px] relative overflow-hidden rounded-2xl group focus:outline-none"
-        >
-          <Image
-            src={images[2].src}
-            alt={images[2].alt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 30vw"
-          />
-          <div className="absolute inset-0 bg-v-dark/0 group-hover:bg-v-dark/20 transition-colors duration-300 rounded-2xl" />
-          <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <ZoomIcon />
-          </span>
-        </button>
-
-        <button
-          onClick={() => open(3)}
-          className="col-span-10 md:col-span-7 h-[280px] md:h-[360px] relative overflow-hidden rounded-2xl group focus:outline-none"
-        >
-          <Image
-            src={images[3].src}
-            alt={images[3].alt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 70vw"
-          />
-          <div className="absolute inset-0 bg-v-dark/0 group-hover:bg-v-dark/20 transition-colors duration-300 rounded-2xl" />
-          <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <ZoomIcon />
-          </span>
-        </button>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        {images.map((image, i) => (
+          <button
+            key={i}
+            onClick={() => open(i)}
+            className="relative h-[200px] md:h-[260px] overflow-hidden rounded-2xl group focus:outline-none"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 33vw"
+            />
+            <div className="absolute inset-0 bg-v-dark/0 group-hover:bg-v-dark/20 transition-colors duration-300 rounded-2xl" />
+            <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <ZoomIcon />
+            </span>
+          </button>
+        ))}
       </div>
 
       {/* ── Lightbox ── */}
