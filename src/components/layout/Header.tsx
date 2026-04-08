@@ -81,12 +81,14 @@ export function Header() {
                   <span>{currentLocale === 'it' ? 'IT' : 'ENG'}</span>
                 </button>
               </div>
+              {/* Area Riservata hidden — not yet implemented
               <Link href={localeHref(currentLocale, '/area-riservata')} className="flex items-center space-x-2 text-v-light hover:text-v-dark font-bold">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span>{tNav('areaRiservata')}</span>
               </Link>
+              */}
             </div>
 
             {/* Mobile Hamburger Button */}
@@ -176,6 +178,7 @@ export function Header() {
             <span>{currentLocale === 'it' ? 'IT' : 'ENG'}</span>
           </button>
 
+          {/* Area Riservata hidden — not yet implemented
           <Link
             href={localeHref(currentLocale, '/area-riservata')}
             onClick={close}
@@ -186,6 +189,7 @@ export function Header() {
             </svg>
             <span>{tNav('areaRiservata')}</span>
           </Link>
+          */}
         </div>
       </nav>
     </>
