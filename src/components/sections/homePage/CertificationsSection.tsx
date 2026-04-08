@@ -1,12 +1,12 @@
 'use client'
 
-import Link from 'next/link'
-import { useReactiveLocale } from '@/hooks/useReactiveLocale'
+// import Link from 'next/link'               // unused while Scopri di più is hidden
+// import { useReactiveLocale } from '@/hooks/useReactiveLocale'  // unused while Scopri di più is hidden
 import { useTranslations } from 'next-intl'
-import { localeHref } from '@/lib/localeHref'
+// import { localeHref } from '@/lib/localeHref'  // unused while Scopri di più is hidden
 
 export function CertificationsSection() {
-  const locale = useReactiveLocale()
+  // const locale = useReactiveLocale()       // unused while Scopri di più is hidden
   const t = useTranslations('homepage.certifications')
 
   const certificationLogos = [
@@ -30,12 +30,14 @@ export function CertificationsSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-v-dark mb-4">
               {t('title')}
             </h2>
+            {/* Scopri di più hidden — certificazioni page not yet ready
             <Link
               href={localeHref(locale, '/certificazioni')}
               className="inline-block border border-v-light text-v-light font-medium py-3 px-8 rounded-full hover:bg-v-light hover:text-white transition-colors"
             >
               {t('scopriDiPiu')}
             </Link>
+            */}
           </div>
 
           {/* Certification logos - 4 logos aligned horizontally */}

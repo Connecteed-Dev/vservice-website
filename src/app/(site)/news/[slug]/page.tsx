@@ -15,7 +15,8 @@ export default async function NewsArticlePage({ params }: { params: { slug: stri
       <HeroPageTitle
         title={t('heroTitle')}
         subtitle={t('heroSubtitle')}
-        backgroundImage="/news/news-hero-image.png"
+        backgroundImage={article?.image ?? '/hero/herobg-blog.png'}
+        withGradient
       />
       <section className="bg-v-faded py-16">
         <div className="container mx-auto px-4 lg:px-8">

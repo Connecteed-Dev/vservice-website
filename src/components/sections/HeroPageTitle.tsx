@@ -6,6 +6,8 @@ export type HeroPageTitleProps = {
   /** Optional; omit for title-only hero */
   subtitle?: string
   backgroundImage: string
+  /** Add a white-to-transparent gradient over the image side, for photos without a baked-in fade */
+  withGradient?: boolean
 }
 
 /**
@@ -16,6 +18,7 @@ export function HeroPageTitle({
   title,
   subtitle,
   backgroundImage,
+  withGradient = false,
 }: HeroPageTitleProps) {
   return (
     <section className="relative overflow-hidden min-h-[320px] md:min-h-[400px] lg:min-h-[480px] bg-white">
@@ -32,6 +35,10 @@ export function HeroPageTitle({
           priority
           sizes="100vw"
         />
+        {/* Gradient overlay to soften the left edge — used when the photo has no baked-in white fade */}
+        {withGradient && (
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent" />
+        )}
       </div>
 
       {/* White title area: left side, right edge is the diagonal */}
