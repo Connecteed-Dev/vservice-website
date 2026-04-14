@@ -21,7 +21,7 @@ export function ContactFormSection() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-  const isFormValid = () => formData.email.trim() !== '' && validateEmail(formData.email) && privacyChecked
+  const isFormValid = () => formData.email.trim() !== '' && validateEmail(formData.email) && formData.message.trim() !== '' && privacyChecked
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
