@@ -59,8 +59,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const siteId = process.env.NEXT_PUBLIC_IUBENDA_SITE_ID || 'IUBENDA_SITE_ID'
-  const policyId = process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID || 'IUBENDA_POLICY_ID'
+  const siteId = process.env.NEXT_PUBLIC_IUBENDA_SITE_ID
+  const policyId = process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID
 
   return (
     <html lang="it">
@@ -68,18 +68,22 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <Script id="iubenda-config" strategy="beforeInteractive">
-          {`
-            var _iub = _iub || [];
-            _iub.csConfiguration = {
-              "siteId": ${siteId},
-              "cookiePolicyId": ${policyId},
-              "lang": "it",
-              "storage": { "useSiteId": true }
-            };
-          `}
-        </Script>
-        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
+        {siteId && policyId && (
+          <>
+            <Script id="iubenda-config" strategy="beforeInteractive">
+              {`
+                var _iub = _iub || [];
+                _iub.csConfiguration = {
+                  "siteId": ${siteId},
+                  "cookiePolicyId": ${policyId},
+                  "lang": "it",
+                  "storage": { "useSiteId": true }
+                };
+              `}
+            </Script>
+            <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
+          </>
+        )}
         <LocalBusinessSchema />
         {children}
       </body>
