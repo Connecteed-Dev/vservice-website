@@ -92,6 +92,7 @@ export async function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center text-v-dark text-sm">
             <div className="flex items-center gap-4">
               <p>{t('copyright')}</p>
+              {/* Privacy Policy — temporarily hidden until client creates Iubenda account
               <a
                 href={`https://www.iubenda.com/privacy-policy/${process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID || 'IUBENDA_POLICY_ID'}`}
                 className="iubenda-white iubenda-noiframe iubenda-embed hover:underline text-v-dark"
@@ -101,6 +102,7 @@ export async function Footer() {
               >
                 Privacy Policy
               </a>
+              */}
             </div>
             <div className="flex items-center space-x-4 mt-4 sm:mt-0">
               <div className="flex items-center space-x-1">
