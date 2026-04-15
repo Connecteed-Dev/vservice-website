@@ -16,7 +16,7 @@ COPY . .
 # Activate standalone output for Docker builds
 ENV DOCKER_BUILD=true
 # Build-time public env vars go here (no secrets)
-# ENV NEXT_PUBLIC_SITE_URL=https://www.vservice.it
+ENV NEXT_PUBLIC_SITE_URL=https://www.vservice.it
 
 RUN npm run build
 
