@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from 'next-intl/server'
+import { FooterLangSwitcher } from './FooterLangSwitcher'
 
 export async function Footer() {
   const t = await getTranslations('footer')
@@ -104,15 +105,8 @@ export async function Footer() {
               </a>
               */}
             </div>
-            <div className="flex items-center space-x-4 mt-4 sm:mt-0">
-              <div className="flex items-center space-x-1">
-                <Image src="/Italian-flag.svg" alt="Italian" width={20} height={14} />
-                <span>IT</span>
-              </div>
-              <div className="flex items-center space-x-1">
-                <Image src="/Eng.svg" alt="English" width={20} height={14} />
-                <span>EN</span>
-              </div>
+            <div className="mt-4 sm:mt-0">
+              <FooterLangSwitcher />
             </div>
           </div>
         </div>
