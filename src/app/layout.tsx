@@ -79,7 +79,7 @@ export default function RootLayout({
             };
           `}
         </Script>
-        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
+        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="beforeInteractive" />
         <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
         <LocalBusinessSchema />
         {children}
