@@ -76,7 +76,7 @@ export default function RootLayout({
                 _iub.csConfiguration = {
                   "siteId": ${siteId},
                   "cookiePolicyId": ${policyId},
-                  "lang": "it",
+                  "lang": window.location.pathname.startsWith('/en') ? 'en' : 'it',
                   "storage": { "useSiteId": true }
                 };
               `}
@@ -84,6 +84,7 @@ export default function RootLayout({
             <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
           </>
         )}
+        <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
         <LocalBusinessSchema />
         {children}
       </body>

@@ -91,22 +91,28 @@ export async function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-v-grey/30 pt-6 mt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center text-v-dark text-sm">
-            <div className="flex items-center gap-4">
-              <p>{t('copyright')}</p>
-              {/* Privacy Policy — temporarily hidden until client creates Iubenda account
+            <p>{t('copyright')}</p>
+            <div className="flex items-center gap-4 mt-4 sm:mt-0">
+              <FooterLangSwitcher />
+              <span className="text-v-grey/50">|</span>
               <a
-                href={`https://www.iubenda.com/privacy-policy/${process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID || 'IUBENDA_POLICY_ID'}`}
-                className="iubenda-white iubenda-noiframe iubenda-embed hover:underline text-v-dark"
+                href={`https://www.iubenda.com/privacy-policy/${process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID}`}
+                className="text-xs text-v-grey hover:text-v-dark transition-colors"
                 title="Privacy Policy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Privacy Policy
               </a>
-              */}
-            </div>
-            <div className="mt-4 sm:mt-0">
-              <FooterLangSwitcher />
+              <a
+                href={`https://www.iubenda.com/privacy-policy/${process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID}/cookie-policy`}
+                className="text-xs text-v-grey hover:text-v-dark transition-colors"
+                title="Cookie Policy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
