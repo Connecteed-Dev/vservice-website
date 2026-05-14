@@ -68,22 +68,18 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        {siteId && policyId && (
-          <>
-            <Script id="iubenda-config" strategy="beforeInteractive">
-              {`
-                var _iub = _iub || [];
-                _iub.csConfiguration = {
-                  "siteId": ${siteId},
-                  "cookiePolicyId": ${policyId},
-                  "lang": window.location.pathname.startsWith('/en') ? 'en' : 'it',
-                  "storage": { "useSiteId": true }
-                };
-              `}
-            </Script>
-            <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
-          </>
-        )}
+        <Script id="iubenda-config" strategy="beforeInteractive">
+          {`
+            var _iub = _iub || [];
+            _iub.csConfiguration = {
+              "siteId": ${siteId || 4532038},
+              "cookiePolicyId": ${policyId || 46361376},
+              "lang": "it",
+              "storage": { "useSiteId": true }
+            };
+          `}
+        </Script>
+        <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" strategy="afterInteractive" />
         <Script src="https://cdn.iubenda.com/iubenda.js" strategy="afterInteractive" />
         <LocalBusinessSchema />
         {children}
