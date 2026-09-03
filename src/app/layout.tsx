@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import { yearsActive } from "@/lib/yearsActive";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,7 +20,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.vservice.it'
 
 export const metadata: Metadata = {
   title: "V.Service - Climatizzazione e Riscaldamento",
-  description: "Leader in climatizzazione e riscaldamento con 20 anni di esperienza",
+  description: `Leader in climatizzazione e riscaldamento con ${yearsActive()} anni di esperienza`,
   manifest: '/manifest.json',
   icons: {
     icon: [

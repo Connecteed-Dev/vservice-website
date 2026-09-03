@@ -55,8 +55,8 @@
       "manutenzione": "Manutenzione e assistenza"
     },
     "twentyYears": {
-      "title": "20 anni di eccellenza in impianti di climatizzazione e riscaldamento",
-      "description1": "V.Service, con un'ampia esperienza nel settore della climatizzazione e del riscaldamento industriale e residenziale, rappresenta un punto di riferimento di alto livello nel mercato. Forte di oltre 20 anni di attività, l'azienda si è specializzata nella realizzazione e nella manutenzione di impianti industriali e civili, offrendo soluzioni sia ad espansione diretta (gas) che indiretta (acqua).",
+      "title": "__YEARS__ anni di eccellenza in impianti di climatizzazione e riscaldamento",
+      "description1": "V.Service, con un'ampia esperienza nel settore della climatizzazione e del riscaldamento industriale e residenziale, rappresenta un punto di riferimento di alto livello nel mercato. Forte di oltre __YEARS__ anni di attività, l'azienda si è specializzata nella realizzazione e nella manutenzione di impianti industriali e civili, offrendo soluzioni sia ad espansione diretta (gas) che indiretta (acqua).",
       "description2": "La lunga storia di V.Service è segnata dalla piena soddisfazione della clientela, una testimonianza del loro impegno nella fornitura di servizi eccellenti. L'azienda si distingue per la sua capacità di seguire attentamente ogni cliente, personalizzando l'offerta in base alle specifiche esigenze, sia in termini di installazione che di manutenzione. La loro expertise nel settore garantisce soluzioni efficienti, affidabili e di lunga durata, sia per ambienti industriali che per quelli residenziali, assicurando così il massimo comfort e ottimizzazione energetica.",
       "azienda": "Azienda",
       "aziendaDesc": "Innovazione ed efficienza con un team competente.",
@@ -81,7 +81,7 @@
       "cert1Title": "Impianti industriali e civili",
       "cert2Title": "Certificazioni FGas",
       "cert3Title": "Certificazioni energetiche",
-      "description1": "Da oltre 20 anni realizziamo e manuteniamo impianti civili ed industriali, sia ad espansione diretta (gas) che indiretta (acqua), con piena soddisfazione della nostra clientela che seguiamo in ogni fase.",
+      "description1": "Da oltre __YEARS__ anni realizziamo e manuteniamo impianti civili ed industriali, sia ad espansione diretta (gas) che indiretta (acqua), con piena soddisfazione della nostra clientela che seguiamo in ogni fase.",
       "description2": "V.service è una società certificata iso9001-15 ed è anche certificata per la movimentazione dei gas refrigeranti.",
       "description3": "I nostri tecnici sono a disposizione per la compilazione e la fornitura dei Libretti d'Impianto con codice Criter per i Libretti FGas e per il rilascio delle Certificazioni Energetiche dei vostri locali.",
       "scopriDiPiu": "Scopri di più"
@@ -99,7 +99,7 @@
     },
     "block1": {
       "title": "V.Service: leader in climatizzazione e riscaldamento",
-      "body": "V.Service si afferma come un'azienda di riferimento nel settore della climatizzazione e riscaldamento industriale, per industria, capannoni, ospedali, uffici, condomini, aziende e residenziale, specializzata nella progettazione, installazione, manutenzione e assistenza di impianti di condizionamento e riscaldamento. Riconosciuta per la sua expertise specifica in questo ambito, V.Service è un punto di riferimento negli impianti di condizionamento e riscaldamento nel Lazio e tutto il centro Italia. Con oltre 20 anni di esperienza, l'azienda gestisce con competenza e professionalità la manutenzione di impianti civili ed industriali, sia a espansione diretta (gas) che indiretta (acqua)."
+      "body": "V.Service si afferma come un'azienda di riferimento nel settore della climatizzazione e riscaldamento industriale, per industria, capannoni, ospedali, uffici, condomini, aziende e residenziale, specializzata nella progettazione, installazione, manutenzione e assistenza di impianti di condizionamento e riscaldamento. Riconosciuta per la sua expertise specifica in questo ambito, V.Service è un punto di riferimento negli impianti di condizionamento e riscaldamento nel Lazio e tutto il centro Italia. Con oltre __YEARS__ anni di esperienza, l'azienda gestisce con competenza e professionalità la manutenzione di impianti civili ed industriali, sia a espansione diretta (gas) che indiretta (acqua)."
     },
     "block2": {
       "title": "Un centro assistenza autorizzato",

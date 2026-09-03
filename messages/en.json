@@ -55,8 +55,8 @@
       "manutenzione": "Maintenance and Support"
     },
     "twentyYears": {
-      "title": "20 years of excellence in heating and air conditioning systems",
-      "description1": "V.Service, with extensive experience in the industrial and residential air conditioning and heating sector, represents a high-level reference point in the market. With over 20 years of activity, the company has specialized in the construction and maintenance of industrial and civil systems, offering solutions both in direct expansion (gas) and indirect (water).",
+      "title": "__YEARS__ years of excellence in heating and air conditioning systems",
+      "description1": "V.Service, with extensive experience in the industrial and residential air conditioning and heating sector, represents a high-level reference point in the market. With over __YEARS__ years of activity, the company has specialized in the construction and maintenance of industrial and civil systems, offering solutions both in direct expansion (gas) and indirect (water).",
       "description2": "The long history of V.Service is marked by full customer satisfaction, a testament to their commitment to providing excellent services. The company stands out for its ability to carefully follow each client, personalizing the offer based on specific needs, both in terms of installation and maintenance. Their expertise in the sector guarantees efficient, reliable and long-lasting solutions, for both industrial and residential environments, ensuring maximum comfort and energy optimization.",
       "azienda": "Company",
       "aziendaDesc": "Innovation and efficiency with a competent team.",
@@ -81,7 +81,7 @@
       "cert1Title": "Industrial and civil systems",
       "cert2Title": "FGas Certifications",
       "cert3Title": "Energy certifications",
-      "description1": "For over 20 years, we have been creating and maintaining civil and industrial systems, both direct expansion (gas) and indirect (water), with full satisfaction of our clients whom we assist in every phase.",
+      "description1": "For over __YEARS__ years, we have been creating and maintaining civil and industrial systems, both direct expansion (gas) and indirect (water), with full satisfaction of our clients whom we assist in every phase.",
       "description2": "V.service is an ISO9001-15 certified company and is also certified for handling refrigerant gases.",
       "description3": "Our technicians are available for compiling and providing System Registers with Criter code for FGAS Registers and for issuing Energy Certifications for your premises.",
       "scopriDiPiu": "Discover More"
@@ -99,7 +99,7 @@
     },
     "block1": {
       "title": "V.Service: leader in heating and air conditioning",
-      "body": "V.Service is a reference company in the industrial heating and air conditioning sector, for industry, warehouses, hospitals, offices, condominiums, businesses and residential, specializing in the design, installation, maintenance and assistance of air conditioning and heating systems. Recognized for its specific expertise in this field, V.Service is a benchmark for air conditioning and heating systems in Lazio and throughout central Italy. With over 20 years of experience, the company manages with competence and professionalism the maintenance of civil and industrial systems, both direct expansion (gas) and indirect (water)."
+      "body": "V.Service is a reference company in the industrial heating and air conditioning sector, for industry, warehouses, hospitals, offices, condominiums, businesses and residential, specializing in the design, installation, maintenance and assistance of air conditioning and heating systems. Recognized for its specific expertise in this field, V.Service is a benchmark for air conditioning and heating systems in Lazio and throughout central Italy. With over __YEARS__ years of experience, the company manages with competence and professionalism the maintenance of civil and industrial systems, both direct expansion (gas) and indirect (water)."
     },
     "block2": {
       "title": "An authorized service center",
@@ -352,7 +352,7 @@
         "section3": {
           "title": "Custom solutions for industrial, commercial and civil environments",
           "description1": "We offer complete design and installation services for air conditioning systems for every type of environment. From small homes to large industrial complexes, from shops to offices, from warehouses to healthcare facilities, we have the right solution for every air conditioning need.",
-          "description2": "Our twenty years of experience in the sector allows us to analyze the specific needs of each client and propose the most suitable system in terms of efficiency, consumption and costs. We use only products from the best brands and cutting-edge technologies to guarantee excellent and long-lasting performance over time."
+          "description2": "Our __YEARS__ years of experience in the sector allows us to analyze the specific needs of each client and propose the most suitable system in terms of efficiency, consumption and costs. We use only products from the best brands and cutting-edge technologies to guarantee excellent and long-lasting performance over time."
         }
       },
       "manutenzione": {
