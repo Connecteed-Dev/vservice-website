@@ -66,6 +66,15 @@ export function Header() {
 
             {/* Right Side - Language Selector + User Area */}
             <div className="hidden lg:flex items-center space-x-6">
+              <a
+                href="tel:+39067610790"
+                className="flex items-center space-x-2 bg-v-light text-white px-4 py-2 rounded-lg font-bold hover:bg-v-dark transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                <span>06 7610790</span>
+              </a>
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => switchLanguage(currentLocale === 'it' ? 'en' : 'it')}
@@ -139,6 +148,20 @@ export function Header() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
+        </div>
+
+        {/* Call CTA */}
+        <div className="px-6 pt-6 shrink-0">
+          <a
+            href="tel:+39067610790"
+            onClick={close}
+            className="flex items-center justify-center space-x-2 bg-v-light text-white px-4 py-3 rounded-lg font-bold hover:bg-v-dark transition-colors"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            <span>06 7610790</span>
+          </a>
         </div>
 
         {/* Nav Links */}
