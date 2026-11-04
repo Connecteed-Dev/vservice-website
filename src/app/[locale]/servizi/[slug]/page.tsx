@@ -5,7 +5,8 @@ import { services } from '@/content/services'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.vservice.it'
 
-export async function generateMetadata({ params }: { params: { locale: string; slug: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
+  const params = await props.params
   const isIT = params.locale === 'it'
   const service = services.find((s) => s.slug === params.slug)
   return {
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: { params: { locale: string; s
   }
 }
 
-export default async function Page({ params }: { params: { locale: string; slug: string } }) {
+export default async function Page(props: { params: Promise<{ locale: string; slug: string }> }) {
+  const params = await props.params
   setRequestLocale(params.locale)
-  return <SitePage params={{ slug: params.slug }} />
+  return <SitePage params={Promise.resolve({ slug: params.slug })} />
 }
