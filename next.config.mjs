@@ -6,6 +6,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig = {
   // standalone output is only needed for Docker/Dokploy — not for Vercel
   ...(process.env.DOCKER_BUILD === 'true' && { output: 'standalone' }),
+  poweredByHeader: false,
   async redirects() {
     return [
       {
@@ -24,7 +25,7 @@ const nextConfig = {
     return config;
   },
   turbopack: {
-    alias: {
+    resolveAlias: {
       '@': './src',
     },
   },

@@ -2,7 +2,8 @@ import { getTranslations } from 'next-intl/server'
 import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
 import { newsArticles } from '@/content/news'
 
-export default async function NewsArticlePage({ params }: { params: { slug: string } }) {
+export default async function NewsArticlePage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params
   const t = await getTranslations('news.article')
   const tArticles = await getTranslations('newsArticles')
   const article = newsArticles.find(a => a.slug === params.slug)

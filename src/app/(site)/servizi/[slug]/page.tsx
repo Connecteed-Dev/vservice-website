@@ -1,7 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import { HeroPageTitle } from '@/components/sections/HeroPageTitle'
 
-export default async function ServizioPage({ params }: { params: { slug: string } }) {
+export default async function ServizioPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params
   const t = await getTranslations('servizi.slug')
 
   return (
