@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
+import { getLocale } from "next-intl/server";
 import "./globals.css";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import { yearsActive } from "@/lib/yearsActive";
@@ -55,16 +56,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   const siteId = process.env.NEXT_PUBLIC_IUBENDA_SITE_ID
   const policyId = process.env.NEXT_PUBLIC_IUBENDA_POLICY_ID
+  // Locale set by the middleware for /it/… and /en/…; falls back to 'it' (see src/i18n/request.ts)
+  const locale = await getLocale()
 
   return (
-    <html lang="it">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
