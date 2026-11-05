@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
+import { clientKey, escapeHtml, isRateLimited, parseContactFields, singleLine } from '@/lib/contactForm'
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
@@ -13,17 +14,24 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, phone, message } = await request.json()
+    if (isRateLimited(clientKey(request.headers))) {
+      return NextResponse.json({ success: false, message: 'Troppi invii, riprova tra qualche minuto' }, { status: 429 })
+    }
 
-    if (!email || !message) {
+    const fields = parseContactFields(await request.json().catch(() => null))
+    if (!fields) {
       return NextResponse.json({ success: false, message: 'Email e messaggio sono obbligatori' }, { status: 400 })
     }
+    const { email } = fields
+    const name = escapeHtml(fields.name)
+    const phone = escapeHtml(fields.phone)
+    const message = escapeHtml(fields.message)
 
     await transporter.sendMail({
       from: `"V.Service Contatti" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_RECIPIENT,
       replyTo: email,
-      subject: `Nuovo messaggio dal sito - ${name || email}`,
+      subject: `Nuovo messaggio dal sito - ${singleLine(fields.name || email)}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: #0F2D58; border-bottom: 2px solid #1059C4; padding-bottom: 8px;">
@@ -36,7 +44,7 @@ export async function POST(request: NextRequest) {
             </tr>
             <tr style="background: #f8f8f8;">
               <td style="padding: 8px 0; font-weight: bold; color: #555;">Email:</td>
-              <td style="padding: 8px 0; color: #222;">${email}</td>
+              <td style="padding: 8px 0; color: #222;">${escapeHtml(email)}</td>
             </tr>
             <tr>
               <td style="padding: 8px 0; font-weight: bold; color: #555;">Telefono:</td>
